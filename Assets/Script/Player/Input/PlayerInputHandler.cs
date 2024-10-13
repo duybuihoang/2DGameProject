@@ -13,6 +13,8 @@ public class PlayerInputHandler : MonoBehaviour
 
     public float inputX { get; private set; }
 
+    public bool attack;
+
     private void Start()
     {
         playerInput = GetComponent<PlayerInput>();
@@ -29,5 +31,16 @@ public class PlayerInputHandler : MonoBehaviour
     {
         MouseInput = context.ReadValue<Vector2>();
     }    
+
+
+    public void OnLeftMouseButtonInput(InputAction.CallbackContext context)
+    {
+        if (context.started)
+            attack = true;
+
+        if (context.canceled)
+            attack = false;
+    }
+
 
 }

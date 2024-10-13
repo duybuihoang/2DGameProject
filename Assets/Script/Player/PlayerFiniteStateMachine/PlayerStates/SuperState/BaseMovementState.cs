@@ -29,10 +29,18 @@ public class BaseMovementState : PlayerState
     {
         base.LogicUpdate();
 
+
         input = player.InputHandler.RawMovementInput;
         inputX = player.InputHandler.inputX;
         mousePos = player.InputHandler.MouseInput;
 
+        Movement?.CheckIfShouldFlip(mousePos, inputX);
+
+
+        if(player.InputHandler.attack)
+        {
+            stateMachine.ChangeState(player.attackState);
+        }
     }
 
 }

@@ -28,9 +28,6 @@ public class MoveState : BaseMovementState
     {
         base.LogicUpdate();
 
-
-        //Movement?.CheckIfShouldFlip(mousePos,inputX);
-
         Movement?.SetVelocity(input, playerData.movementVelocity);
 
         if (!isExistingState)

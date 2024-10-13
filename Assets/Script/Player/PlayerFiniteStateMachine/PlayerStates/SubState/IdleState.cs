@@ -31,7 +31,6 @@ public class IdleState : BaseMovementState
     public override void LogicUpdate()
     {
         base.LogicUpdate();
-        Movement?.CheckIfShouldFlip(mousePos,inputX);
 
         if (!isExistingState)
         {

@@ -20,6 +20,7 @@ public class Player : MonoBehaviour
 
     public IdleState idleState { get; private set; }
     public MoveState moveState { get; private set; }
+    public AttackState attackState { get; private set; }
 
 
     #endregion
@@ -34,8 +35,8 @@ public class Player : MonoBehaviour
 
         idleState = new IdleState(this, StateMachine, playerData, "Idle");
         moveState = new MoveState(this, StateMachine, playerData, "Walk");
+        attackState = new AttackState(this, StateMachine, playerData, "Attack");
 
-        
     }
 
 

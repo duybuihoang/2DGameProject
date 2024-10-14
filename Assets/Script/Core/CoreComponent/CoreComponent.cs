@@ -3,26 +3,31 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class CoreComponent : MonoBehaviour
+namespace DuyBui.CoreSystem
 {
-    protected Core core;
-
-    public virtual void LogicUpdate()
+    public class CoreComponent : MonoBehaviour
     {
+        protected Core core;
 
-    }
-
-    protected virtual void Awake()
-    {
-        core = transform.parent.GetComponent<Core>();
-
-        if(core == null)
+        public virtual void LogicUpdate()
         {
-            Debug.LogError("Core is missing!");
+
         }
-        //core.AddComponent(this);
+
+        protected virtual void Awake()
+        {
+            core = transform.parent.GetComponent<Core>();
+
+            if (core == null)
+            {
+                Debug.LogError("Core is missing!");
+            }
+            core.AddComponent(this);
+
+        }
+
 
     }
-
-
 }
+
+

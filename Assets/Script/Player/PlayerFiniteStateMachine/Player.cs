@@ -1,3 +1,5 @@
+using DuyBui.CoreSystem;
+using DuyBui.Weapon.Components;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -25,17 +27,24 @@ public class Player : MonoBehaviour
 
     #endregion
 
+    private Weapon weapon;
 
 
     private void Awake()
     {
         Core = GetComponentInChildren<Core>();
 
+        weapon = transform.Find("Weapon").GetComponent<Weapon>();
+        weapon.SetCore(Core);
+
         StateMachine = gameObject.AddComponent<PlayerStateMachine>();
+
+        
+        
 
         idleState = new IdleState(this, StateMachine, playerData, "Idle");
         moveState = new MoveState(this, StateMachine, playerData, "Walk");
-        attackState = new AttackState(this, StateMachine, playerData, "Attack");
+        attackState = new AttackState(this, StateMachine, playerData, "Attack", weapon);
 
     }
 
@@ -62,4 +71,9 @@ public class Player : MonoBehaviour
     {
         StateMachine.currentState.PhysicsUpdate();
     }
+
+
+    private void AnimationTrigger() => StateMachine.currentState.AnimationTrigger();
+
+    private void AnimationFinishTrigger() => StateMachine.currentState.AnimationFinishTrigger();
 }

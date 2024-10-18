@@ -34,7 +34,8 @@ public class Player : MonoBehaviour
     {
         Core = GetComponentInChildren<Core>();
 
-        weapon = transform.Find("Weapon").GetComponent<Weapon>();
+        //weapon = transform.Find("Weapon").GetComponent<Weapon>();
+        weapon = transform.GetComponentInChildren<Weapon>();
         weapon.SetCore(Core);
 
         StateMachine = gameObject.AddComponent<PlayerStateMachine>();
@@ -44,7 +45,7 @@ public class Player : MonoBehaviour
 
         idleState = new IdleState(this, StateMachine, playerData, "Idle");
         moveState = new MoveState(this, StateMachine, playerData, "Walk");
-        attackState = new AttackState(this, StateMachine, playerData, "Attack", weapon);
+        //attackState = new AttackState(this, StateMachine, playerData, "Attack", weapon);
 
     }
 
@@ -64,6 +65,11 @@ public class Player : MonoBehaviour
     {
         Core.LogicUpdate();
         StateMachine.currentState.LogicUpdate();
+
+        if(InputHandler.attack)
+        {
+            weapon.Enter();
+        }
         
     }
 

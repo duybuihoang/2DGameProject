@@ -12,6 +12,12 @@ namespace DuyBui.Weapon.Components
     {
         public WeaponDataSO Data { get; private set; }
 
+        private PlayerInputHandler inputHandler;
+        private GameObject activeWeapon;
+        private GameObject player;
+
+        protected bool isAttacking = false;
+
         [SerializeField] private float attackCounterResetCooldown;
         private int currentAttackCounter;
         public int CurrentAttackCounter
@@ -39,14 +45,19 @@ namespace DuyBui.Weapon.Components
 
         public void Enter()
         {
-            print($"{transform.name} enter");
+            if (isAttacking == false)
+            {
+                print($"{transform.name} enter");
 
-            attackCounterResetTimer.StopTimer();
+                attackCounterResetTimer.StopTimer();
 
-            anim.SetBool("active", true);
-            anim.SetInteger("counter", CurrentAttackCounter);
+                anim.SetBool("active", true);
+                anim.SetInteger("counter", CurrentAttackCounter);
 
-            onEnter?.Invoke();
+                onEnter?.Invoke();
+
+                isAttacking = true;
+            }
         }
 
         public void SetCore(Core core)
@@ -61,10 +72,14 @@ namespace DuyBui.Weapon.Components
 
         private void Exit()
         {
+            print($"{transform.name} exit");
+
             anim.SetBool("active", false);
             CurrentAttackCounter++;
             attackCounterResetTimer.StartTimer();
             onExit?.Invoke();
+
+            isAttacking = false;
         }
 
         private void Awake()
@@ -75,12 +90,19 @@ namespace DuyBui.Weapon.Components
 
             attackCounterResetTimer = new Timer(attackCounterResetCooldown);
 
+            inputHandler = GetComponentInParent<PlayerInputHandler>();
+
+            activeWeapon = transform.parent.gameObject;
+            player = transform.parent.parent.gameObject;
 
         }
 
         private void Update()
         {
             attackCounterResetTimer.Tick();
+
+            MouseFollowWithOffset();
+
         }
 
         private void ResetAttackCounter() => CurrentAttackCounter = 0;
@@ -95,6 +117,20 @@ namespace DuyBui.Weapon.Components
         {
             EventHandler.OnFinish -= Exit;
             attackCounterResetTimer.OnTimerDone -= ResetAttackCounter;
+
+        }
+
+        private void MouseFollowWithOffset()
+        {
+            Vector3 mousePos = inputHandler.MouseInput;
+            Vector3 playerScreenPoint = Camera.main.WorldToScreenPoint(player.transform.position);
+
+            float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
+
+            if(mousePos.x > playerScreenPoint.x)
+                activeWeapon.transform.rotation = Quaternion.Euler(0, 0, angle);
+            else
+                activeWeapon.transform.rotation = Quaternion.Euler(0, -180, angle);
 
         }
     }

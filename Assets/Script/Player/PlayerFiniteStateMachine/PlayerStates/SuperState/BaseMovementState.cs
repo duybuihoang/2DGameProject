@@ -37,11 +37,11 @@ public class BaseMovementState : PlayerState
 
         Movement?.CheckIfShouldFlip(mousePos, inputX);
 
-
+/*
         if(player.InputHandler.attack)
         {
             stateMachine.ChangeState(player.attackState);
-        }
+        }*/
     }
 
 }

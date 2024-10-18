@@ -55,6 +55,7 @@ namespace DuyBui.Weapon.Components
         {
             base.HandleEnter();
 
+
             currentAttackData = data.AttackData[weapon.CurrentAttackCounter];
 
         }

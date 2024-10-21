@@ -46,7 +46,7 @@ namespace DuyBui.Weapon.Components
 
     }
 
-    public class WeaponComponent<T1, T2> : WeaponComponent where T1 : ComponentData<T2> where T2 : AttackData
+    public abstract class WeaponComponent<T1, T2> : WeaponComponent where T1 : ComponentData<T2> where T2 : AttackData
     {
         protected T1 data;
         protected T2 currentAttackData;

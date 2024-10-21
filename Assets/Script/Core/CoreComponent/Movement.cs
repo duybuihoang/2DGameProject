@@ -58,10 +58,6 @@ namespace DuyBui.CoreSystem
         {
             Vector3 playerScreenPoint = Camera.main.WorldToScreenPoint(RB.transform.position);
 
-            /*if (xInput != 0 && xInput * FacingDirection < 0)
-            {
-                Flip();
-            }*/
 
             if (FacingDirection == 1)
             {

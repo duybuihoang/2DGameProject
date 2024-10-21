@@ -65,11 +65,6 @@ public class Player : MonoBehaviour
     {
         Core.LogicUpdate();
         StateMachine.currentState.LogicUpdate();
-
-        if(InputHandler.attack)
-        {
-            weapon.Enter();
-        }
         
     }
 

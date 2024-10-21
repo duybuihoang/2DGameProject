@@ -46,7 +46,7 @@ namespace DuyBui.Weapon.Components
 
     }
 
-    public abstract class WeaponComponent<T1, T2> : WeaponComponent where T1 : ComponentData<T2> where T2 : AttackData
+    public class WeaponComponent<T1, T2> : WeaponComponent where T1 : ComponentData<T2> where T2 : AttackData
     {
         protected T1 data;
         protected T2 currentAttackData;
@@ -55,6 +55,11 @@ namespace DuyBui.Weapon.Components
         {
             base.HandleEnter();
 
+            Debug.Log("-----------------------------------");
+            Debug.Log("attack data: " + data.ToString());
+            Debug.Log("attack counter: " + weapon.CurrentAttackCounter);
+            Debug.Log("attack data length: " + data.AttackData.Length);
+            Debug.Log("-----------------------------------");
 
             currentAttackData = data.AttackData[weapon.CurrentAttackCounter];
 

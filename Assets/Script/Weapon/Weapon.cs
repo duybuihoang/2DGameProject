@@ -102,6 +102,10 @@ namespace DuyBui.Weapon.Components
             attackCounterResetTimer.Tick();
 
             MouseFollowWithOffset();
+            if(inputHandler.attack)
+            {
+                this.Enter();
+            }
 
         }
 

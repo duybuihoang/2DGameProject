@@ -1,3 +1,4 @@
+using DuyBui.CoreSystem;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -35,7 +36,7 @@ public class PlayerState : MonoBehaviour
 
         isAnimationFinished = false;
         isExistingState = false;
-        Debug.Log(animBoolName);
+        Debug.Log("PlayerState: " + animBoolName);
 
 
     }

@@ -2,51 +2,55 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-
-public class Core : MonoBehaviour
+namespace DuyBui.CoreSystem
 {
-    private readonly List<CoreComponent> CoreComponents = new List<CoreComponent>();
-
-    private void Awake()
+    public class Core : MonoBehaviour
     {
-        
-    }
+        private readonly List<CoreComponent> CoreComponents = new List<CoreComponent>();
 
-    public void LogicUpdate()
-    {
-        foreach (CoreComponent item in CoreComponents)
+        private void Awake()
         {
-            item.LogicUpdate();
+
         }
-    }
 
-    public void AddComponent(CoreComponent component)
-    {
-        if(!CoreComponents.Contains(component))
+        public void LogicUpdate()
         {
-            CoreComponents.Add(component);
-        }
-    }
-
-
-    public T GetCoreComponent<T>()where T: CoreComponent
-    {
-        var comp = CoreComponents.OfType<T>().FirstOrDefault();
-
-        if(!comp)
-        {
-            comp = GetComponentInChildren<T>();
-            if(!comp)
+            foreach (CoreComponent item in CoreComponents)
             {
-                Debug.LogWarning($"{typeof(T)} not found in {transform.parent.name} ");
-                return null;
+                item.LogicUpdate();
             }
         }
-        return comp;
-    }
-    public T GetCoreComponent<T>(ref T value) where T : CoreComponent
-    {
-        value = GetCoreComponent<T>();
-        return value;
+
+        public void AddComponent(CoreComponent component)
+        {
+            if (!CoreComponents.Contains(component))
+            {
+                CoreComponents.Add(component);
+            }
+        }
+
+
+        public T GetCoreComponent<T>() where T : CoreComponent
+        {
+            var comp = CoreComponents.OfType<T>().FirstOrDefault();
+
+            if (comp)
+                return comp;
+
+            comp = GetComponentInChildren<T>();
+
+            if (comp)
+                return comp;
+
+            Debug.LogWarning($"{typeof(T)} not found on {transform.parent.name}");
+            return null;
+
+        }
+        public T GetCoreComponent<T>(ref T value) where T : CoreComponent
+        {
+            value = GetCoreComponent<T>();
+            return value;
+        }
     }
 }
+

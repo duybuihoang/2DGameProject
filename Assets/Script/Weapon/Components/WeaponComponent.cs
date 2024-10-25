@@ -55,12 +55,6 @@ namespace DuyBui.Weapon.Components
         {
             base.HandleEnter();
 
-            Debug.Log("-----------------------------------");
-            Debug.Log("attack data: " + data.ToString());
-            Debug.Log("attack counter: " + weapon.CurrentAttackCounter);
-            Debug.Log("attack data length: " + data.AttackData.Length);
-            Debug.Log("-----------------------------------");
-
             currentAttackData = data.AttackData[weapon.CurrentAttackCounter];
 
         }

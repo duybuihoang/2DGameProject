@@ -47,9 +47,7 @@ namespace DuyBui.Weapon.Components
         {
             if (isAttacking == false)
             {
-                print($"{transform.name} enter");
-
-                attackCounterResetTimer.StopTimer();
+                //print($"{transform.name} enter");
 
                 anim.SetBool("active", true);
                 anim.SetInteger("counter", CurrentAttackCounter);
@@ -72,11 +70,10 @@ namespace DuyBui.Weapon.Components
 
         private void Exit()
         {
-            print($"{transform.name} exit");
+            //print($"{transform.name} exit");
 
             anim.SetBool("active", false);
             CurrentAttackCounter++;
-            attackCounterResetTimer.StartTimer();
             onExit?.Invoke();
 
             isAttacking = false;
@@ -99,7 +96,8 @@ namespace DuyBui.Weapon.Components
 
         private void Update()
         {
-            attackCounterResetTimer.Tick();
+            //attackCounterResetTimer.Tick();
+            MouseFollowWithOffset();
             
             if(inputHandler.attack)
             {
@@ -108,18 +106,19 @@ namespace DuyBui.Weapon.Components
 
         }
 
-        private void ResetAttackCounter() => CurrentAttackCounter = 0;
+        private void ResetAttackCounter()
+        {
+            currentAttackCounter = 0;
+        }  
 
         private void OnEnable()
         {
             EventHandler.OnFinish += Exit;
-            attackCounterResetTimer.OnTimerDone += ResetAttackCounter;
         }
 
         private void OnDisable()
         {
             EventHandler.OnFinish -= Exit;
-            attackCounterResetTimer.OnTimerDone -= ResetAttackCounter;
 
         }
 
@@ -134,7 +133,6 @@ namespace DuyBui.Weapon.Components
                 activeWeapon.transform.rotation = Quaternion.Euler(0, 0, angle);
             else
                 activeWeapon.transform.rotation = Quaternion.Euler(0, -180, angle);
-
         }
     }
 

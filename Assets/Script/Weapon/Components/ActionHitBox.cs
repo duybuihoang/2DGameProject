@@ -15,9 +15,15 @@ namespace DuyBui.Weapon.Components
         private Vector2 offset;
         private Collider2D[] detected;
 
+        protected override void Awake()
+        {
+            base.Awake();
+        }
+
         protected override void Start()
         {
             base.Start();
+            Debug.Log("actionHitBox Start");
             movement = new CoreComp<CoreSystem.Movement>(Core);
             evenHandler.OnAttackAction += HandleAttackAction;
 
@@ -36,13 +42,12 @@ namespace DuyBui.Weapon.Components
 
             if (detected.Length == 0)
                 return;
-             
 
             OnDetectedCollider2D?.Invoke(detected);
 
             foreach (var item in detected)
             {
-                Debug.Log(item.name);
+                Debug.Log(this.weapon.name + " attack " +item.name);
             }
 
         }
@@ -64,7 +69,7 @@ namespace DuyBui.Weapon.Components
                 if (!item.Debug)
                     continue;
 
-                Gizmos.DrawWireCube((transform.position + (Vector3)item.HitBox.center), item.HitBox.size);
+                Gizmos.DrawWireCube(((transform.position + (Vector3)item.HitBox.center)), item.HitBox.size);
             }
         }
     }

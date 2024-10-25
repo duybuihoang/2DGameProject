@@ -19,7 +19,7 @@ namespace DuyBui.CoreSystem
             }
 
             this.core = core;
-            Debug.Log("getting core: " + core);
+            //Debug.Log("getting core: " + core);
         }
 
     }

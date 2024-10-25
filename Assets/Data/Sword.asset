@@ -14,12 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <NumberOfAttacks>k__BackingField: 2
   <ComponentData>k__BackingField:
-  - rid: 1810832199908327426
-  - rid: 1810832199908327427
+  - rid: 1810832438012674048
+  - rid: 1810832438012674049
   references:
     version: 2
     RefIds:
-    - rid: 1810832199908327426
+    - rid: 1810832438012674048
+      type: {class: DamageData, ns: DuyBui.Weapon.Components, asm: Assembly-CSharp}
+      data:
+        name: DamageData
+        attackData:
+        - name: Attack 1
+          <Amount>k__BackingField: 10
+        - name: Attack 2
+          <Amount>k__BackingField: 10
+    - rid: 1810832438012674049
       type: {class: ActionHitboxData, ns: DuyBui.Weapon.Components, asm: Assembly-CSharp}
       data:
         name: ActionHitboxData
@@ -28,19 +37,18 @@ MonoBehaviour:
           Debug: 1
           <HitBox>k__BackingField:
             serializedVersion: 2
-            x: 10
-            y: 10
-            width: 10
-            height: 10
+            x: 2.05
+            y: 8.44
+            width: 8.7
+            height: 13.06
+        - name: Attack 2
+          Debug: 0
+          <HitBox>k__BackingField:
+            serializedVersion: 2
+            x: 0
+            y: 0
+            width: 0
+            height: 0
         <DetectableLayers>k__BackingField:
           serializedVersion: 2
           m_Bits: 0
-    - rid: 1810832199908327427
-      type: {class: DamageData, ns: DuyBui.Weapon.Components, asm: Assembly-CSharp}
-      data:
-        name: DamageData
-        attackData:
-        - name: 
-          <Amount>k__BackingField: 1
-        - name: 
-          <Amount>k__BackingField: 1

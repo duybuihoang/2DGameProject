@@ -123,56 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &203967035 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3434762754440245407, guid: ec21525e05c39d44ca964bed63517b50, type: 3}
-  m_PrefabInstance: {fileID: 5778899596631399}
-  m_PrefabAsset: {fileID: 0}
---- !u!61 &203967041
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 203967035}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.4317398, y: -0.028342783}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.11241792, y: 0.50191236}
-    oldSize: {x: 1.125, y: 1}
-    newSize: {x: 1.125, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.3095429, y: 0.85857797}
-  m_EdgeRadius: 0
 --- !u!1 &483029824
 GameObject:
   m_ObjectHideFlags: 0
@@ -739,7 +689,8 @@ GameObject:
   - component: {fileID: 1606111853}
   - component: {fileID: 1606111852}
   - component: {fileID: 1606111854}
-  m_Layer: 0
+  - component: {fileID: 1606111855}
+  m_Layer: 8
   m_Name: Ghost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -858,6 +809,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0271349, y: 1.0612705}
   m_EdgeRadius: 0
+--- !u!114 &1606111855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606111851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d34ff6a359b7064da2e24708768e345, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1753572434
 GameObject:
   m_ObjectHideFlags: 0
@@ -1054,10 +1017,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3434762754440245407, guid: ec21525e05c39d44ca964bed63517b50, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 203967041}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec21525e05c39d44ca964bed63517b50, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

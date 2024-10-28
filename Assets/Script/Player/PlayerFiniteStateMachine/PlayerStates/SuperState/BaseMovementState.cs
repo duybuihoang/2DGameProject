@@ -35,7 +35,7 @@ public class BaseMovementState : PlayerState
         inputX = player.InputHandler.inputX;
         mousePos = player.InputHandler.MouseInput;
 
-        Movement?.CheckIfShouldFlip(mousePos, inputX);
+        Movement?.CheckIfShouldFlip(mousePos);
 
 /*
         if(player.InputHandler.attack)

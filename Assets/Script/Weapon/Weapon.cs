@@ -25,7 +25,6 @@ namespace DuyBui.Weapon.Components
             get => currentAttackCounter;
             private set
             {
-                //currentAttackCounter = value % numberOfAttacks;
                 currentAttackCounter = value >= Data?.NumberOfAttacks ? 0 : value;
             }
         }
@@ -42,13 +41,10 @@ namespace DuyBui.Weapon.Components
         public Core Core { get; private set; }
 
 
-
         public void Enter()
         {
             if (isAttacking == false)
             {
-                //print($"{transform.name} enter");
-
                 anim.SetBool("active", true);
                 anim.SetInteger("counter", CurrentAttackCounter);
 
@@ -91,13 +87,15 @@ namespace DuyBui.Weapon.Components
 
             activeWeapon = transform.parent.gameObject;
             player = transform.parent.parent.gameObject;
-
         }
 
         private void Update()
         {
             //attackCounterResetTimer.Tick();
-            MouseFollowWithOffset();
+            if(!isAttacking)
+            {
+                MouseFollowWithOffset();
+            }    
             
             if(inputHandler.attack)
             {

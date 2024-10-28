@@ -54,7 +54,7 @@ namespace DuyBui.CoreSystem
                 currentVelocity = workspace;
             }
         }
-        public void CheckIfShouldFlip(Vector2 mousePos, float xInput)
+        public void CheckIfShouldFlip(Vector2 mousePos)
         {
             Vector3 playerScreenPoint = Camera.main.WorldToScreenPoint(RB.transform.position);
 

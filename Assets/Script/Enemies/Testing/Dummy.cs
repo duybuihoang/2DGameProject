@@ -6,9 +6,14 @@ namespace DuyBui.Enemies
 {
     public class Dummy : MonoBehaviour, IDamageable
     {
+        private Rigidbody2D RB;
+        private void Start()
+        {
+            RB = GetComponent<Rigidbody2D>();
+        }
         public void Damage(float amount)
         {
-            Debug.Log(this.name + "taken damage");
+            RB.AddForce(new Vector2(10, 10));
         }
     }
 }

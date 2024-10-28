@@ -37,18 +37,18 @@ MonoBehaviour:
           Debug: 1
           <HitBox>k__BackingField:
             serializedVersion: 2
-            x: 2.05
-            y: 8.44
-            width: 8.7
-            height: 13.06
+            x: -0.3
+            y: -2.04
+            width: 2.33
+            height: 4.54
         - name: Attack 2
-          Debug: 0
+          Debug: 1
           <HitBox>k__BackingField:
             serializedVersion: 2
-            x: 0
-            y: 0
-            width: 0
-            height: 0
+            x: 1.72
+            y: 1.1
+            width: 1.07
+            height: 1.95
         <DetectableLayers>k__BackingField:
           serializedVersion: 2
-          m_Bits: 0
+          m_Bits: 256

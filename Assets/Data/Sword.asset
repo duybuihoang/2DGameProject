@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Sword
   m_EditorClassIdentifier: 
   <NumberOfAttacks>k__BackingField: 2
+  <SlashEffect>k__BackingField: {fileID: 6012817263296891837, guid: d114b660ef246fa449284fe621a60e84, type: 3}
   <ComponentData>k__BackingField:
   - rid: 1810832438012674048
   - rid: 1810832438012674049

@@ -4,6 +4,7 @@ using DuyBui.Utils;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.ShaderKeywordFilter;
 using UnityEngine;
 
 namespace DuyBui.Weapon.Components
@@ -18,7 +19,6 @@ namespace DuyBui.Weapon.Components
 
         protected bool isAttacking = false;
 
-        [SerializeField] private float attackCounterResetCooldown;
         private int currentAttackCounter;
         public int CurrentAttackCounter
         {
@@ -40,6 +40,10 @@ namespace DuyBui.Weapon.Components
         public AnimationEventHandler EventHandler { get; private set; }
         public Core Core { get; private set; }
 
+        [SerializeField] public GameObject SlashEffect;
+        [SerializeField] public Transform SlashSpawnPoint;
+        private GameObject slashAnimation;
+
 
         public void Enter()
         {
@@ -51,6 +55,7 @@ namespace DuyBui.Weapon.Components
                 onEnter?.Invoke();
 
                 isAttacking = true;
+                TriggerSlashEffect();
             }
         }
 
@@ -80,8 +85,6 @@ namespace DuyBui.Weapon.Components
             WeaponGameObject = transform.Find("WeaponSprite").gameObject;
             anim = WeaponGameObject.GetComponent<Animator>();
             EventHandler = WeaponGameObject.GetComponent<AnimationEventHandler>();
-
-            attackCounterResetTimer = new Timer(attackCounterResetCooldown);
 
             inputHandler = GetComponentInParent<PlayerInputHandler>();
 
@@ -127,11 +130,41 @@ namespace DuyBui.Weapon.Components
 
             float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
 
-            if(mousePos.x > playerScreenPoint.x)
+            if (mousePos.x > playerScreenPoint.x)
+            {
                 activeWeapon.transform.rotation = Quaternion.Euler(0, 0, angle);
+            }
             else
+            {
                 activeWeapon.transform.rotation = Quaternion.Euler(0, -180, angle);
+            }
         }
+
+        //todo: bring slash effect to weapon component
+        private void TriggerSlashEffect()
+        {
+            Vector3 mousePos = inputHandler.MouseInput;
+            Vector3 playerScreenPoint = Camera.main.WorldToScreenPoint(player.transform.position);
+
+
+            slashAnimation = Instantiate(SlashEffect, SlashSpawnPoint.position, Quaternion.identity);
+            slashAnimation.transform.parent = this.transform.parent;
+
+            if (mousePos.x > playerScreenPoint.x)
+            {
+                slashAnimation.GetComponent<SpriteRenderer>().flipX = false;
+            }
+            else
+            {
+                slashAnimation.GetComponent<SpriteRenderer>().flipX = true;
+            }
+
+            
+            slashAnimation.GetComponent<SpriteRenderer>().flipY = currentAttackCounter != 0;
+            
+
+        }
+
     }
 
 }

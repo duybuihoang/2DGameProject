@@ -13,6 +13,9 @@ namespace DuyBui.Enemies
         protected D_MoveState stateData;
 
         protected bool isRoamingOver;
+        protected bool isPlayerInDetectedRange;
+        protected bool isPlayerInAttackRange;
+
         protected float randomRoamingTime;
 
         protected Vector2 roamingDirection;
@@ -22,25 +25,43 @@ namespace DuyBui.Enemies
         {
             this.stateData = stateData;
         }
+        public override void DoChecks()
+        {
+            base.DoChecks();
+            isPlayerInAttackRange = entity.CheckPlayerInAttackRangeAction();
+        }
 
         public override void Enter()
         {
             base.Enter();
 
+            
             roamingDirection = entity.GetRoamingPosition();
-            if(roamingDirection.x * Movement.FacingDirection < 0f)
-            {
-                Movement?.Flip();
-            }
+    
 
-            Movement?.SetVelocity(roamingDirection, stateData.movementSpeed);
+            //Movement?.SetVelocity(roamingDirection, stateData.movementSpeed);
             isRoamingOver = false;
             SetRandomRoamingTime();
+            
         }
 
         public override void LogicUpdate()
         {
             base.LogicUpdate();
+
+            isPlayerInDetectedRange = entity.CheckPlayerInDetectedRange();
+
+            if (isPlayerInDetectedRange)
+            {
+                Vector3 pos = entity.GetPlayerInDetectedRange().transform.position;
+                roamingDirection = (Vector2)(pos - entity.transform.position).normalized;
+            }
+
+            if (roamingDirection.x * Movement.FacingDirection < 0f)
+            {
+                Movement?.Flip();
+            }
+
             Movement?.SetVelocity(roamingDirection, stateData.movementSpeed);
 
             if (Time.time >= startTime + randomRoamingTime)

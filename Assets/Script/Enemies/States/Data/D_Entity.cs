@@ -9,6 +9,10 @@ namespace DuyBui
     {
         public float maxHealth = 30f;
 
+        public float detectRadius = 10f;
+
+        public float TriggerAttackActionRadius = 0.8f;
+
         public LayerMask whatIsGround;
         public LayerMask whatIsPlayer;
     }

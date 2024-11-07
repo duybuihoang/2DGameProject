@@ -15,16 +15,14 @@ namespace DuyBui.Enemies
         public override void LogicUpdate()
         {
             base.LogicUpdate();
-
-
-
-            if(isRoamingOver)
+            
+            if(isPlayerInAttackRange)
             {
-                //if(roamingDirection.x * Movement.FacingDirection < 0)
-                //{
-                //    enemy.idleState.SetFlipAfterIdle(true);
-                //}
+                stateMachine.ChangeState(enemy.attackState);
 
+            }
+            else if(isRoamingOver && !isPlayerInDetectedRange)
+            {
                 stateMachine.ChangeState(enemy.idleState);
             }
         }

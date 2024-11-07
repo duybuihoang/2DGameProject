@@ -13,16 +13,24 @@ namespace DuyBui.Enemies
         protected D_IdleState stateData;
 
         protected bool isIdleTimeOver;
+        protected bool isPlayerInDetectedRange;
         //protected bool flipAfterIdle;
 
 
         protected float idleTime;
+
 
         public IdleState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, D_IdleState stateData) : base(entity, stateMachine, animBoolName)
         {
             this.stateData = stateData;
         }
 
+        public override void DoChecks()
+        {
+            base.DoChecks();
+
+            isPlayerInDetectedRange = entity.CheckPlayerInDetectedRange();
+        }
 
         public override void Enter()
         {

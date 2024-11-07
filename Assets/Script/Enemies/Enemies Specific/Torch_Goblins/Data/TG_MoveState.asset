@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: TG_MoveState
   m_EditorClassIdentifier: 
   movementSpeed: 3
-  minRoamingTime: 2
-  maxRoamingTime: 4
+  minRoamingTime: 0.5
+  maxRoamingTime: 1

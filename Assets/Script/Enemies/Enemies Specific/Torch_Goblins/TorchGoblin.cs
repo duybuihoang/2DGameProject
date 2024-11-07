@@ -9,6 +9,7 @@ namespace DuyBui.Enemies
         #region State Initialize
         public TG_IdleState idleState { get; private set; }
         public TG_MoveState moveState { get; private set; }
+        public TG_MeleeAttackState attackState { get; private set; }
 
         #endregion
 
@@ -17,7 +18,12 @@ namespace DuyBui.Enemies
         private D_IdleState idleStateData;
         [SerializeField]
         private D_MoveState moveStateData;
+        [SerializeField]
+        private D_MeleeAttackState meleeAttackStateData;
         #endregion
+
+        [SerializeField]
+        private Transform meleeAttackPosition;
 
         public override void Awake()
         {
@@ -25,6 +31,7 @@ namespace DuyBui.Enemies
 
             idleState = new TG_IdleState(this, stateMachine, "idle", idleStateData, this);
             moveState = new TG_MoveState(this, stateMachine, "move", moveStateData, this);
+            attackState = new TG_MeleeAttackState(this, stateMachine, "attack", meleeAttackPosition, meleeAttackStateData, this);
         }
 
         private void Start()
@@ -34,7 +41,9 @@ namespace DuyBui.Enemies
 
         public override void OnDrawGizmos()
         {
-            
+            base.OnDrawGizmos();
+
+            Gizmos.DrawWireSphere(meleeAttackPosition.position, meleeAttackStateData.attackRadius);
         }
     }
 }

@@ -17,7 +17,8 @@ namespace DuyBui.Enemies
         public override void LogicUpdate()
         {
             base.LogicUpdate();
-            if(isIdleTimeOver)
+
+            if(isIdleTimeOver || isPlayerInDetectedRange)
             {
                 stateMachine.ChangeState(enemy.moveState);
             }    

@@ -9,15 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2597e605a845b04c8b7c416d3a08ee9, type: 3}
-  m_Name: TG_BaseData
+  m_Script: {fileID: 11500000, guid: f22ba1616bd13d246a3cc9b90c36f265, type: 3}
+  m_Name: TG_MeleeAttackStateData
   m_EditorClassIdentifier: 
-  maxHealth: 30
-  detectRadius: 2.5
-  TriggerAttackActionRadius: 0.8
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 0
+  attackRadius: 0.8
+  attackDamage: 10
+  knockbackAngle: {x: 1, y: 1}
+  knockbackStrength: 10
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 1024

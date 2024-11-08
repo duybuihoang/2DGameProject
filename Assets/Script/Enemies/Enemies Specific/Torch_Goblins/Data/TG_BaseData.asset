@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: TG_BaseData
   m_EditorClassIdentifier: 
   maxHealth: 30
-  detectRadius: 2.5
-  TriggerAttackActionRadius: 0.8
+  detectRadius: 5
+  TriggerAttackActionRadius: 0.5
   whatIsGround:
     serializedVersion: 2
     m_Bits: 0

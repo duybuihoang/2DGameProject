@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace DuyBui.CoreSystem
 {
-    public class CoreComponent : MonoBehaviour
+    public class CoreComponent : MonoBehaviour, ILogicUpdate
     {
         protected Core core;
 

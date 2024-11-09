@@ -47,6 +47,7 @@ namespace DuyBui.Weapon.Components
 
             foreach (var item in detected)
             {
+
                 Debug.Log(this.weapon.name + " attack " +item.name);
             }
 

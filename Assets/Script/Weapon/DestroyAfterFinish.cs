@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace DuyBui
 {
-    public class SlashAnimation : MonoBehaviour
+    public class DestroyAfterFinish : MonoBehaviour
     {
         public void OnFinished()
         {

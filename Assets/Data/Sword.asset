@@ -43,7 +43,7 @@ MonoBehaviour:
             width: 2.2
             height: 3.11
         - name: Attack 1
-          Debug: 1
+          Debug: 0
           <HitBox>k__BackingField:
             serializedVersion: 2
             x: -0.3

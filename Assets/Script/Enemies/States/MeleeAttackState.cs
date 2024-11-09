@@ -25,6 +25,7 @@ namespace DuyBui.Enemies
             {
                 IDamageable damageable = collider.GetComponent<IDamageable>();
 
+
                 if (damageable != null)
                 {
                     damageable.Damage(stateData.attackDamage);

@@ -1576,7 +1576,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 1
+  m_LinearDrag: 1.5
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: eb04665876f2a3c49b91b89066f39f6e, type: 2}
@@ -1586,7 +1586,7 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
@@ -1782,8 +1782,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2067249826}
   - component: {fileID: 2067249827}
-  - component: {fileID: 2067249828}
   - component: {fileID: 2067249829}
+  - component: {fileID: 2067249828}
   m_Layer: 10
   m_Name: Combat
   m_TagString: Untagged

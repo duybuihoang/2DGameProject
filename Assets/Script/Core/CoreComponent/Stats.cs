@@ -12,6 +12,9 @@ namespace DuyBui.CoreSystem
         [SerializeField] private float maxHealth;
         private float currentHealth;
 
+        private Flash flash;
+        private Flash Flash => flash ? flash : core.GetCoreComponent(ref flash);
+
         protected override void Awake()
         {
             base.Awake();
@@ -22,6 +25,9 @@ namespace DuyBui.CoreSystem
         public void DecreaseHealth(float amount)
         {
             currentHealth -= amount;
+
+            Flash?.StartFlash();
+
             if (currentHealth <= 0)
             {
                 currentHealth = 0;

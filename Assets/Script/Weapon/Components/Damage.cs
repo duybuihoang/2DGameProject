@@ -14,7 +14,6 @@ namespace DuyBui.Weapon.Components
             {
                 if (item.TryGetComponent(out IDamageable damageable))
                 {
-
                     damageable.Damage(currentAttackData.Amount);
                 }
             }

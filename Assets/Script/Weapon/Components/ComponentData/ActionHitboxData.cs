@@ -8,7 +8,7 @@ namespace DuyBui.Weapon.Components
     {
         [field: SerializeField] public LayerMask DetectableLayers { get; private set; }
 
-        public ActionHitboxData()
+        protected override void SetComponentDependency()
         {
             ComponentDependency = typeof(ActionHitBox);
         }

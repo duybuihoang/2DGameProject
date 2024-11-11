@@ -15,9 +15,10 @@ namespace DuyBui.Weapon.Components
 
         private PlayerInputHandler inputHandler;
         private GameObject activeWeapon;
-        private GameObject player;
 
-        protected bool isAttacking = false;
+        public GameObject player { get; set; }
+
+        public bool isAttacking = false;
 
         private int currentAttackCounter;
         public int CurrentAttackCounter

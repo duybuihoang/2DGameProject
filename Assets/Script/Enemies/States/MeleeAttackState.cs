@@ -31,12 +31,13 @@ namespace DuyBui.Enemies
                     damageable.Damage(stateData.attackDamage);
                 }
 
-                //IKnockBackable knockbackable = collider.GetComponent<IKnockBackable>();
+                IKnockbackable knockbackable = collider.GetComponent<IKnockbackable>();
 
-                //if (knockbackable != null)
-                //{
-                //    knockbackable.KnockBack(stateData.knockbackAngle, stateData.knockbackStrength, Movement.FacingDirection);
-                //}
+                if (knockbackable != null)
+                {
+                    Vector2 direction = (collider.transform.position - entity.transform.position).normalized;
+                    knockbackable.KnockBack(direction, stateData.knockbackStrength);
+                }
 
             }
         }

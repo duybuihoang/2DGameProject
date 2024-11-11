@@ -6,7 +6,7 @@ using UnityEngine;
 namespace DuyBui.Weapon.Components
 {
     [Serializable]
-    public class ComponentData 
+    public abstract class ComponentData 
     {
         [SerializeField, HideInInspector] private string name;
 
@@ -15,16 +15,19 @@ namespace DuyBui.Weapon.Components
         public ComponentData()
         {
             SetComponentName();
+            SetComponentDependency();
         }
 
         public void SetComponentName() => name = GetType().Name;
+        protected abstract void SetComponentDependency();
+
 
         public virtual void SetAttackDataNames() { }
         public virtual void InitializeAttackData(int numberOfAttack = 0) { }
     }
 
     [Serializable]
-    public class ComponentData<T> : ComponentData where T : AttackData
+    public abstract class ComponentData<T> : ComponentData where T : AttackData
     {
         [SerializeField] private T[] attackData;
         public T[] AttackData { get => attackData; private set => attackData = value; }

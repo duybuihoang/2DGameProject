@@ -6,6 +6,6 @@ namespace DuyBui
 {
     public interface IKnockbackable 
     {
-        void Knockback();
+        void KnockBack(Vector2 direction, float strength);
     }
 }

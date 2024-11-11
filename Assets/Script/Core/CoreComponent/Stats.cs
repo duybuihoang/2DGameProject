@@ -22,12 +22,10 @@ namespace DuyBui.CoreSystem
         public void DecreaseHealth(float amount)
         {
             currentHealth -= amount;
-            Debug.Log(currentHealth);
             if (currentHealth <= 0)
             {
                 currentHealth = 0;
                 OnHealthZero?.Invoke();
-                Debug.Log("Health is zero!!");
             }
         }
 

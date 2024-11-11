@@ -14,7 +14,7 @@ namespace DuyBui.CoreSystem
         public Vector2 currentVelocity { get; private set; }
         private Vector2 workspace;
 
-        public bool canSetVelocity { get; private set; }
+        public bool canSetVelocity;
 
         protected override void Awake()
         {

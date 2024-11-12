@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 8638430421336415030}
   - component: {fileID: 6262922020439955565}
   m_Layer: 0
-  m_Name: Weapon
+  m_Name: Sword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -165,7 +165,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ecd413ebc5d56444aef81bf64e4c55e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCounterResetCooldown: 0
+  isAttacking: 0
+  SlashEffect: {fileID: 6012817263296891837, guid: d114b660ef246fa449284fe621a60e84, type: 3}
+  SlashSpawnPoint: {fileID: 0}
 --- !u!114 &6262922020439955565
 MonoBehaviour:
   m_ObjectHideFlags: 0

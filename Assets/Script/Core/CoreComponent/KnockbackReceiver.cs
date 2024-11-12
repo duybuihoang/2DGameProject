@@ -14,7 +14,8 @@ namespace DuyBui.CoreSystem
         private bool isKnockBackActive;
         private float knockBackStartTimer;
 
-        
+        private Stats stats;
+        private Stats Stats => stats ? stats : core.GetCoreComponent(ref stats);
 
         public override void LogicUpdate()
         {
@@ -44,6 +45,7 @@ namespace DuyBui.CoreSystem
             {
                 isKnockBackActive = false;
                 movement.Comp.canSetVelocity = true;
+                Stats?.CheckIsDeath();
             }
         }
        

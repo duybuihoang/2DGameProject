@@ -29,6 +29,7 @@ namespace DuyBui.Enemies
                 if (damageable != null)
                 {
                     damageable.Damage(stateData.attackDamage);
+                    damageable.EmitHitParticle(entity.transform.position, collider.transform.position);
                 }
 
                 IKnockbackable knockbackable = collider.GetComponent<IKnockbackable>();
@@ -38,6 +39,8 @@ namespace DuyBui.Enemies
                     Vector2 direction = (collider.transform.position - entity.transform.position).normalized;
                     knockbackable.KnockBack(direction, stateData.knockbackStrength);
                 }
+
+                
 
             }
         }

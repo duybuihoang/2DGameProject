@@ -15,6 +15,7 @@ namespace DuyBui.Weapon.Components
                 if (item.TryGetComponent(out IDamageable damageable))
                 {
                     damageable.Damage(currentAttackData.Amount);
+                    damageable.EmitHitParticle(weapon.transform.position, item.transform.position);
                 }
             }
         }

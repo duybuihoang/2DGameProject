@@ -28,16 +28,21 @@ namespace DuyBui.CoreSystem
 
             Flash?.StartFlash();
 
-            if (currentHealth <= 0)
-            {
-                currentHealth = 0;
-                OnHealthZero?.Invoke();
-            }
+            
         }
 
         public void IncreaseHealth(float amount)
         {
             currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
+        }
+
+        public void CheckIsDeath()
+        {
+            if (currentHealth <= 0)
+            {
+                currentHealth = 0;
+                OnHealthZero?.Invoke();
+            }
         }
     }
 }

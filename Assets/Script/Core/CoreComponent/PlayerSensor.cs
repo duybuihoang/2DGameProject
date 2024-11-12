@@ -14,7 +14,7 @@ namespace DuyBui.CoreSystem
             playerPos = GameObject.Find("Player");
         }
 
-        protected virtual Vector2 GetPlayerPos()
+        public virtual Vector2 GetPlayerPos()
         {
             return playerPos.transform.position;
         }

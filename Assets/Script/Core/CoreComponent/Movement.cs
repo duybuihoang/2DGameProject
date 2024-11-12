@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 namespace DuyBui.CoreSystem
@@ -13,7 +14,7 @@ namespace DuyBui.CoreSystem
         public Vector2 currentVelocity { get; private set; }
         private Vector2 workspace;
 
-        public bool canSetVelocity { get; private set; }
+        public bool canSetVelocity;
 
         protected override void Awake()
         {
@@ -45,7 +46,15 @@ namespace DuyBui.CoreSystem
             workspace = Vector2.zero;
             SetFinalVelocity();
         }
+        public void SetVelocity(Vector2 startPos, Vector2 endPos, float velocity)
+        {
 
+            Vector2 direction = endPos - startPos;
+            direction.Normalize();
+            workspace = direction * velocity;
+
+            SetFinalVelocity();
+        }
         public void SetFinalVelocity()
         {
             if (canSetVelocity)
@@ -54,6 +63,9 @@ namespace DuyBui.CoreSystem
                 currentVelocity = workspace;
             }
         }
+
+         
+        
         public void CheckIfShouldFlip(Vector2 mousePos)
         {
             Vector3 playerScreenPoint = Camera.main.WorldToScreenPoint(RB.transform.position);
@@ -83,6 +95,12 @@ namespace DuyBui.CoreSystem
 
         #endregion
 
+        private void RoundVector(Vector2 v)
+        {
+            v.Set(Mathf.RoundToInt(v.x), Mathf.RoundToInt(v.y));
+        }
+
+        
     }
 
 }

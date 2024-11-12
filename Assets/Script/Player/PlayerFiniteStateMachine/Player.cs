@@ -39,11 +39,8 @@ public class Player : MonoBehaviour
 
         StateMachine = gameObject.AddComponent<PlayerStateMachine>();
 
-        
-        
-
-        idleState = new IdleState(this, StateMachine, playerData, "Idle");
-        moveState = new MoveState(this, StateMachine, playerData, "Walk");
+        idleState = new IdleState(this, StateMachine, playerData, "Idle", weapon);
+        moveState = new MoveState(this, StateMachine, playerData, "Walk", weapon);
 
     }
 

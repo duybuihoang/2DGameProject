@@ -34,7 +34,7 @@ namespace DuyBui.Enemies
             {
                 if(!isPlayerInAttackRange)
                 {
-                    stateMachine.ChangeState(enemy.moveState);
+                    stateMachine.ChangeState(enemy.idleState);
                 }
             }
         }

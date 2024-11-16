@@ -21,7 +21,7 @@ namespace DuyBui.Enemies
         [SerializeField]
         private Transform playerCheck;
         [SerializeField]
-        private Transform meleeAttackCheck;
+        private Transform attackCheck;
 
         private float currentHealth;
 
@@ -55,7 +55,7 @@ namespace DuyBui.Enemies
             if(Core!= null)
             {
                 Gizmos.DrawWireSphere(playerCheck.position, entityData.detectRadius);
-                Gizmos.DrawWireSphere(meleeAttackCheck.position, entityData.TriggerAttackActionRadius);
+                Gizmos.DrawWireSphere(attackCheck.position, entityData.TriggerAttackActionRadius);
 
             }
         }
@@ -70,7 +70,7 @@ namespace DuyBui.Enemies
         }
         public virtual bool CheckPlayerInAttackRangeAction()
         {
-            return Physics2D.OverlapCircle(meleeAttackCheck.position, entityData.TriggerAttackActionRadius, entityData.whatIsPlayer);
+            return Physics2D.OverlapCircle(attackCheck.position, entityData.TriggerAttackActionRadius, entityData.whatIsPlayer);
         }
         public virtual Collider2D GetPlayerInDetectedRange()
         {

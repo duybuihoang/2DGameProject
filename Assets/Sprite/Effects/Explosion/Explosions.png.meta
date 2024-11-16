@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8f1a730e001161549aa48806b96744c1
+guid: 5fd313825eea1224f9c68a475a75f214
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,127 +136,190 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dynamite_0
+      name: Explosions_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0501cbf092c094841816711de368bf7d
-      internalID: -707788630
+      spriteID: e04f00beebfb0ff42b391b1f422e5c84
+      internalID: -1001642698
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dynamite_1
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dfd3272bd416b57418955d6083b8b2c7
-      internalID: -229599367
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dynamite_2
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 81275856e675fc44aa0e509f5fe92295
-      internalID: -1731424879
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dynamite_3
+      name: Explosions_1
       rect:
         serializedVersion: 2
         x: 192
         y: 0
-        width: 64
-        height: 64
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0f92e00555964342a2d21e15656d280
-      internalID: 2025451982
+      spriteID: 1005350cb6a01294d8de9a983d390688
+      internalID: -973430892
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dynamite_4
+      name: Explosions_2
       rect:
         serializedVersion: 2
-        x: 256
+        x: 384
         y: 0
-        width: 64
-        height: 64
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5dd9081aecbb2f54a8ef4f24bbf8e3aa
-      internalID: 745789822
+      spriteID: fc3846fd39cf8b840b9e8f508a3ecdeb
+      internalID: 1922678472
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dynamite_5
+      name: Explosions_3
       rect:
         serializedVersion: 2
-        x: 320
+        x: 576
         y: 0
-        width: 64
-        height: 64
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a348942f37f621f47999ecdb833a6661
-      internalID: 2090512106
+      spriteID: 27b4b71c70e4ad840bb060816b0fbb2d
+      internalID: 1796405171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosions_4
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1bc15f5093995346a433c1330fe33ce
+      internalID: 1198462804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosions_5
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44026e951ab7b9942a5f2e9a4378f827
+      internalID: 299557603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosions_6
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d38ee8bf540f502439dab258b6d2a66d
+      internalID: -1975844008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosions_7
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 718948c7af8d419489b10ff7aaa42f1e
+      internalID: -1299713941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosions_8
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61323fb01eabee543ba673598341b067
+      internalID: -132733448
       vertices: []
       indices: 
       edges: []
@@ -272,12 +335,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Dynamite_0: -707788630
-      Dynamite_1: -229599367
-      Dynamite_2: -1731424879
-      Dynamite_3: 2025451982
-      Dynamite_4: 745789822
-      Dynamite_5: 2090512106
+      Explosions_0: -1001642698
+      Explosions_1: -973430892
+      Explosions_2: 1922678472
+      Explosions_3: 1796405171
+      Explosions_4: 1198462804
+      Explosions_5: 299557603
+      Explosions_6: -1975844008
+      Explosions_7: -1299713941
+      Explosions_8: -132733448
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

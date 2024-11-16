@@ -11,9 +11,6 @@ namespace DuyBui.Enemies
         protected Movement Movement { get => movement ?? core.GetCoreComponent(ref movement); }
         private Movement movement;
 
-        protected PlayerSensor Sensor { get => sensor ?? core.GetCoreComponent(ref sensor); }
-        private PlayerSensor sensor;
-
         protected bool isAnimationFinish;
         protected bool isPlayerInAttackRange;
 

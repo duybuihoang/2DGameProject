@@ -14,8 +14,6 @@ namespace DuyBui.Enemies
 
         protected bool isIdleTimeOver;
         protected bool isPlayerInDetectedRange;
-        //protected bool flipAfterIdle;
-
 
         protected float idleTime;
 
@@ -54,18 +52,7 @@ namespace DuyBui.Enemies
         public override void Exit()
         {
             base.Exit();
-
-            //if(flipAfterIdle)
-            //{
-            //    Movement?.Flip();
-            //}
-
         }
-
-        //public void SetFlipAfterIdle(bool flip)
-        //{
-        //    flipAfterIdle = flip;
-        //}
 
         private void SetRandomIdleTime()
         {

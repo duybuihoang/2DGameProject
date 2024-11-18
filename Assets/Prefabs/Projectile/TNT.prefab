@@ -122,8 +122,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
-  duration: 1
-  heightY: 1
+  duration: 2
+  heightY: 5
   shadow: {fileID: 2093611359682163286, guid: 9fac4e0688265a845b639ad29d5733cf, type: 3}
   animCurve:
     serializedVersion: 2
@@ -131,24 +131,25 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 0
-      outSlope: 0
+      inSlope: 2
+      outSlope: 2
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
+      time: 1.130635
+      value: 0.00020923885
+      inSlope: -1.521574
+      outSlope: -1.521574
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0
+      inWeight: 0.05049509
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  shadowOffset: {x: 0, y: 0, z: 0}
 --- !u!114 &4044339953325846687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,4 +174,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1d38bf90de45e64eb38563a0f0432cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageRadius: 0.8
+  damageRadius: 0.6
+  minimumScale: 2
+  MaximumScale: 3

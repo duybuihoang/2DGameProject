@@ -3,12 +3,18 @@ using DuyBui;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem.Processors;
 
 public class TNT : MonoBehaviour
 {
     private Animator anim;
     private Projectile projectile;
+    private float currentScale = 1f;
     [SerializeField] private float damageRadius = 1f;
+    [SerializeField] float minimumScale = 1f;
+    [SerializeField] float MaximumScale = 2f;
+    private bool isExploded = false;
+
 
     private void Awake()
     {
@@ -18,13 +24,19 @@ public class TNT : MonoBehaviour
 
     private void Update()
     {
-        if (projectile.CheckMaxRange())
+        if (projectile.CheckMaxRange() && !isExploded)
+        {
             anim.SetBool("explode", true);
+            isExploded = true;
+
+            randomScaleExplosion();
+
+        }
     }
 
     public void Damage()
     {
-        Collider2D[] targets = Physics2D.OverlapCircleAll(this.transform.position, damageRadius);
+        Collider2D[] targets = Physics2D.OverlapCircleAll(this.transform.position, damageRadius * currentScale);
 
         foreach (var item in targets)
         {
@@ -40,6 +52,12 @@ public class TNT : MonoBehaviour
 
         }
 
+    }
+
+    private void randomScaleExplosion()
+    {
+        currentScale = Random.Range(minimumScale, MaximumScale);
+        transform.localScale = Vector3.one * currentScale;
     }
 
     private void OnDrawGizmos()

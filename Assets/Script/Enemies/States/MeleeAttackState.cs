@@ -1,6 +1,7 @@
 using DuyBui.CoreSystem;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.Sockets;
 using UnityEngine;
 
 namespace DuyBui.Enemies
@@ -29,7 +30,6 @@ namespace DuyBui.Enemies
                 if (damageable != null)
                 {
                     damageable.Damage(stateData.attackDamage);
-                    damageable.EmitHitParticle(entity.transform.position, collider.transform.position);
                 }
 
                 IKnockbackable knockbackable = collider.GetComponent<IKnockbackable>();
@@ -40,7 +40,13 @@ namespace DuyBui.Enemies
                     knockbackable.KnockBack(direction, stateData.knockbackStrength);
                 }
 
-                
+                IParticle particle = collider.GetComponent<IParticle>();
+
+                if(particle != null)
+                {
+                    particle.EmitHitParticle(entity.transform.position, collider.transform.position);
+                }
+
 
             }
         }

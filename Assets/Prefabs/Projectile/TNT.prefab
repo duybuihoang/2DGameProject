@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 654895408975356989}
   - component: {fileID: 207541038198162092}
   - component: {fileID: 4506876823550086199}
-  - component: {fileID: 6598265505065661140}
+  - component: {fileID: 2474462679339824464}
+  - component: {fileID: 4044339953325846687}
+  - component: {fileID: 8181402605061339011}
   m_Layer: 0
   m_Name: TNT
   m_TagString: Untagged
@@ -107,7 +109,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &6598265505065661140
+--- !u!114 &2474462679339824464
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -116,9 +118,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6930875992067678369}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1d38bf90de45e64eb38563a0f0432cb, type: 3}
+  m_Script: {fileID: 11500000, guid: a0ba745aa903b4145af5ca57597aa8c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 0
   duration: 1
   heightY: 1
   shadow: {fileID: 2093611359682163286, guid: 9fac4e0688265a845b639ad29d5733cf, type: 3}
@@ -135,8 +138,8 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.2666626
-      value: 0.7587166
+      time: 0.56658936
+      value: 0.33835983
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -146,3 +149,28 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4044339953325846687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6930875992067678369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 199f92f7fca9f1041820b3551b672b4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8181402605061339011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6930875992067678369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1d38bf90de45e64eb38563a0f0432cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageRadius: 0.6

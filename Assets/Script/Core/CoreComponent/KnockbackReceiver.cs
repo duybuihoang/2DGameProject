@@ -11,15 +11,17 @@ namespace DuyBui.CoreSystem
 
         private CoreComp<Movement> movement;
 
-        private bool isKnockBackActive;
+        protected bool isKnockBackActive { get; private set; }
         private float knockBackStartTimer;
 
         private Stats stats;
+        private KnockbackReceiver knockback;
         private Stats Stats => stats ? stats : core.GetCoreComponent(ref stats);
 
         public override void LogicUpdate()
         {
             CheckKnockback();
+
         }
 
         protected override void Awake()
@@ -41,11 +43,10 @@ namespace DuyBui.CoreSystem
 
         private void CheckKnockback()
         {
-            if(isKnockBackActive  && Time.time >= knockBackStartTimer + maxKnockbackTime)
+            if(isKnockBackActive && Time.time >= knockBackStartTimer + maxKnockbackTime)
             {
                 isKnockBackActive = false;
                 movement.Comp.canSetVelocity = true;
-                Stats?.CheckIsDeath();
             }
         }
        

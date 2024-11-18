@@ -14,3 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 6930875992067678369, guid: 0c0a41e14ea65c442ae13115637c54fc, type: 3}
   projectileDamage: 10
+  attackRadius: 10
+  whatIsPlayer:
+    serializedVersion: 2
+    m_Bits: 1024

@@ -28,7 +28,7 @@ namespace DuyBui.CoreSystem
 
             Flash?.StartFlash();
 
-            
+            Debug.Log(currentHealth);
         }
 
         public void IncreaseHealth(float amount)

@@ -2,13 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace DuyBui.Projectile
+
+
+public class Projectile : MonoBehaviour
 {
-    public abstract class Projectile : MonoBehaviour
+    protected Vector3 startPos;
+    protected bool isMaxRange;
+    public float damage;
+
+    protected virtual void Start()
     {
-        //private 
-
-        private float speed;
-
+        Vector3 startPos = this.transform.position;
+        isMaxRange = false;
     }
+    public virtual void Fire(Vector3 start, Vector3 dest, float damage)
+    {
+        this.damage = damage;
+    }
+    public virtual bool CheckMaxRange()
+    {
+        return false;
+    }
+
 }
+

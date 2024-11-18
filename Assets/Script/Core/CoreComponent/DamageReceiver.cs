@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace DuyBui.CoreSystem
 {
-    public class DamageReceiver : CoreComponent, IDamageable
+    public class DamageReceiver : CoreComponent, IDamageable, IParticle
     {
         [SerializeField] private GameObject HitParticle;
         private CoreComp<Stats> stats;
@@ -37,6 +37,11 @@ namespace DuyBui.CoreSystem
             base.Awake();
 
             stats = new CoreComp<Stats>(core);
+        }
+        public override void LogicUpdate()
+        {
+            base.LogicUpdate();
+            stats.Comp.CheckIsDeath();
         }
     }
 }

@@ -7,5 +7,7 @@ public class D_RangedAttackState : ScriptableObject
 {
     public GameObject projectile;
     public float projectileDamage = 10f;
+    public float attackRadius = 10f;
+    public LayerMask whatIsPlayer;
 }
 

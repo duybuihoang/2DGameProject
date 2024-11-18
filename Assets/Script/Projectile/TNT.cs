@@ -1,41 +1,51 @@
+using DuyBui.Weapon.Components;
+using DuyBui;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace DuyBui.Projectile
+public class TNT : MonoBehaviour
 {
-    public class TNT : MonoBehaviour
+    private Animator anim;
+    private Projectile projectile;
+    [SerializeField] private float damageRadius = 1f;
+
+    private void Awake()
     {
-        [SerializeField] private float duration = 1f;
-        [SerializeField] private float heightY = 1f;
-        [SerializeField] private GameObject shadow;
-        [SerializeField] private AnimationCurve animCurve;
-
-        private void Start()
-        {
-            GameObject dynamiteShadow = Instantiate(shadow, transform.position + new Vector3(0f, -0.3f, 0f), Quaternion.identity);
-
-            Vector3 startPos = this.transform.position;
-            Vector3 shadowStartPos = dynamiteShadow.transform.position;
-            StartCoroutine(CurveRoutine(transform.position, new Vector3(10, 10, 10)));
-
-        }
-
-        private IEnumerator CurveRoutine(Vector3 startPos, Vector3 endPos)
-        {
-            float timePassed = 0f;
-
-            while(timePassed <= duration)
-            {
-                timePassed += Time.deltaTime;
-                float linearT = timePassed / duration;
-                float heightT = animCurve.Evaluate(linearT);
-                float height = Mathf.Lerp(0f, heightY, heightT);
-
-                transform.position = Vector2.Lerp(startPos, endPos, linearT) + new Vector2(0f, height);
-                yield return null;
-            }
-            Destroy(gameObject);
-        }
+        anim = GetComponent<Animator>();
+        projectile = GetComponent<Projectile>();
     }
+
+    private void Update()
+    {
+        if (projectile.CheckMaxRange())
+            anim.SetBool("explode", true);
+    }
+
+    public void Damage()
+    {
+        Collider2D[] targets = Physics2D.OverlapCircleAll(this.transform.position, damageRadius);
+
+        foreach (var item in targets)
+        {
+            if (item.TryGetComponent(out IDamageable damageable))
+            {
+                damageable.Damage(projectile.damage);
+            }
+
+            if (item.TryGetComponent(out IKnockbackable knockbackable))
+            {
+                knockbackable.KnockBack((item.transform.position - this.transform.position).normalized, 10f);
+            }
+
+        }
+
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(transform.position, damageRadius);
+    }
+
 }
+

@@ -14,6 +14,7 @@ public class PlayerInputHandler : MonoBehaviour
     public float inputX { get; private set; }
 
     public bool attack;
+    public bool dash;
 
     private void Start()
     {
@@ -40,6 +41,12 @@ public class PlayerInputHandler : MonoBehaviour
 
         if (context.canceled)
             attack = false;
+    }
+
+    public void OnSpaceButtonInput(InputAction.CallbackContext context)
+    {
+        if (context.started)
+            dash = true;
     }
 
 

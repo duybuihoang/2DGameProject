@@ -47,6 +47,7 @@ namespace DuyBui.CoreSystem
             {
                 isKnockBackActive = false;
                 movement.Comp.canSetVelocity = true;
+                Stats?.CheckIsDeath();
             }
         }
        

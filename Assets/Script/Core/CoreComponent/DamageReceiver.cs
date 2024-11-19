@@ -41,7 +41,7 @@ namespace DuyBui.CoreSystem
         public override void LogicUpdate()
         {
             base.LogicUpdate();
-            stats.Comp.CheckIsDeath();
+            //stats.Comp.CheckIsDeath();
         }
     }
 }

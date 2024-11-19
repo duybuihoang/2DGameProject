@@ -176,4 +176,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageRadius: 0.6
   minimumScale: 2
-  MaximumScale: 3
+  MaximumScale: 4
+  knockbackStrength: 10

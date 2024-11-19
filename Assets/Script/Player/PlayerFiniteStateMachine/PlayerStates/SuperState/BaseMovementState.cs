@@ -15,6 +15,9 @@ public class BaseMovementState : PlayerState
     protected Movement Movement { get => movement ?? core.GetCoreComponent(ref movement); }
     private Movement movement;
 
+    private bool rollInput;
+
+
     public BaseMovementState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName, Weapon weapon) : base(player, stateMachine, playerData, animBoolName)
     {
         this.weapon = weapon;
@@ -23,6 +26,7 @@ public class BaseMovementState : PlayerState
     public override void Enter()
     {
         base.Enter();
+        player.rollState.ResetCanDash();
     }
 
     public override void Exit()
@@ -38,17 +42,17 @@ public class BaseMovementState : PlayerState
         input = player.InputHandler.RawMovementInput;
         inputX = player.InputHandler.inputX;
         mousePos = player.InputHandler.MouseInput;
+        rollInput = player.InputHandler.RollInput;
 
         if(!weapon.isAttacking)
         {
             Movement?.CheckIfShouldFlip(mousePos);
         }
 
-/*
-        if(player.InputHandler.attack)
+        if(rollInput && player.rollState.CheckIfCanDash())
         {
-            stateMachine.ChangeState(player.attackState);
-        }*/
+            stateMachine.ChangeState(player.rollState);
+        }
     }
 
 }

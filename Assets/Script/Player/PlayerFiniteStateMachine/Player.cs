@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
 {
     public PlayerStateMachine StateMachine { get; private set; }
     public Core Core { get; private set; }
-    private Rigidbody2D rb;
+    public Rigidbody2D RB;
     public PlayerInputHandler InputHandler { get; private set; }
     public Animator Anim { get; private set; }
 
@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
 
     public IdleState idleState { get; private set; }
     public MoveState moveState { get; private set; }
-    public AttackState attackState { get; private set; }
+    public RollState rollState { get; private set; }
 
 
     #endregion
@@ -41,6 +41,7 @@ public class Player : MonoBehaviour
 
         idleState = new IdleState(this, StateMachine, playerData, "Idle", weapon);
         moveState = new MoveState(this, StateMachine, playerData, "Walk", weapon);
+        rollState = new RollState(this, StateMachine, playerData, "Roll");
 
     }
 
@@ -48,7 +49,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        RB = GetComponent<Rigidbody2D>();
         InputHandler = GetComponent<PlayerInputHandler>();
         Anim = GetComponent<Animator>();
 
@@ -60,6 +61,7 @@ public class Player : MonoBehaviour
     {
         Core.LogicUpdate();
         StateMachine.currentState.LogicUpdate();
+        //Debug.Log(this.InputHandler.MouseInput.normalized);
         
     }
 

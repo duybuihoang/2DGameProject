@@ -13,6 +13,7 @@ public class TNT : MonoBehaviour
     [SerializeField] private float damageRadius = 1f;
     [SerializeField] float minimumScale = 1f;
     [SerializeField] float MaximumScale = 2f;
+    [SerializeField] float knockbackStrength = 10f;
     private bool isExploded = false;
 
 
@@ -47,7 +48,7 @@ public class TNT : MonoBehaviour
 
             if (item.TryGetComponent(out IKnockbackable knockbackable))
             {
-                knockbackable.KnockBack((item.transform.position - this.transform.position).normalized, 10f);
+                knockbackable.KnockBack((item.transform.position - this.transform.position).normalized, knockbackStrength);
             }
 
         }
@@ -62,7 +63,7 @@ public class TNT : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawWireSphere(transform.position, damageRadius);
+        Gizmos.DrawWireSphere(transform.position, damageRadius * currentScale);
     }
 
 }

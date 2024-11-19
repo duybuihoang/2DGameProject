@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 public class PlayerInputHandler : MonoBehaviour
@@ -14,7 +15,7 @@ public class PlayerInputHandler : MonoBehaviour
     public float inputX { get; private set; }
 
     public bool attack;
-    public bool dash;
+    public bool RollInput;
 
     private void Start()
     {
@@ -46,8 +47,10 @@ public class PlayerInputHandler : MonoBehaviour
     public void OnSpaceButtonInput(InputAction.CallbackContext context)
     {
         if (context.started)
-            dash = true;
+            RollInput = true;
     }
+    public void UseRollInput() => RollInput = false;
+
 
 
 }

@@ -1365,6 +1365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93a1092ec6f9ddc4bb487949c00049b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RB: {fileID: 1288294986}
   playerData: {fileID: 11400000, guid: 750fc3439ac551440b5cbd171ad87a97, type: 2}
 --- !u!114 &1288294982
 MonoBehaviour:
@@ -1379,7 +1380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attack: 0
-  dash: 0
+  RollInput: 0
 --- !u!114 &1288294983
 MonoBehaviour:
   m_ObjectHideFlags: 0

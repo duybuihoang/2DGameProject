@@ -46,6 +46,7 @@ public class BaseMovementState : PlayerState
 
         if(!weapon.isAttacking)
         {
+            Debug.Log(mousePos);
             Movement?.CheckIfShouldFlip(mousePos);
         }
 

@@ -150,7 +150,7 @@ Transform:
   m_GameObject: {fileID: 55213618}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: -0.027, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -899,7 +899,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: -0.027, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1295,7 +1295,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.3}
@@ -1345,7 +1345,7 @@ Transform:
   m_GameObject: {fileID: 1288294979}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.027, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1365,6 +1365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93a1092ec6f9ddc4bb487949c00049b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RB: {fileID: 0}
   playerData: {fileID: 11400000, guid: 750fc3439ac551440b5cbd171ad87a97, type: 2}
 --- !u!114 &1288294982
 MonoBehaviour:
@@ -1379,7 +1380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attack: 0
-  dash: 0
+  RollInput: 0
 --- !u!114 &1288294983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1933,6 +1934,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1651401905009690056, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: m_Name
       value: Torch_Red_Goblins
@@ -1941,6 +1946,26 @@ PrefabInstance:
       propertyPath: attackCheck
       value: 
       objectReference: {fileID: 604670855}
+    - target: {fileID: 7233605536984459352, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_Mass
+      value: 0.26566368
+      objectReference: {fileID: 0}
+    - target: {fileID: 7233605536984459352, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7233605536984459352, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7233605536984459352, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7233605536984459352, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_UseAutoMass
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8654428738651118996, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.34

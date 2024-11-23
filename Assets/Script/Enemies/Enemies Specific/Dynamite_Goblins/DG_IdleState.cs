@@ -11,6 +11,12 @@ namespace DuyBui.Enemies
         {
             this.enemy = enemy;
         }
+
+        public override void Enter()
+        {
+            base.Enter();
+            Movement?.SetVelocityZero();
+        }
         public override void LogicUpdate()
         {
             base.LogicUpdate();

@@ -41,7 +41,7 @@ public class RollState : PlayerAbilityState
         player.InputHandler.UseRollInput();
         canRoll = false;
         //TODO: make mouse input to screen point and calculate direction vector
-        rollDirection = (Camera.main.ScreenToWorldPoint(player.InputHandler.MouseInput  ) - player.transform.position).normalized;
+        rollDirection = player.InputHandler.MouseInput;
     }
 
     public override void Exit()
@@ -57,7 +57,7 @@ public class RollState : PlayerAbilityState
 
         if(!isExistingState)
         {
-            Movement?.SetVelocity(rollDirection, playerData.rollVelocity);
+            Movement?.SetVelocity(rollDirection.normalized, playerData.rollVelocity);
             //CheckIfShouldPlaceAfterImage();
 
             if(Time.time >= startTime + playerData.rollTime)

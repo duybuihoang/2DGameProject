@@ -70,9 +70,6 @@ namespace DuyBui.CoreSystem
         {
             Vector3 playerScreenPoint = Camera.main.WorldToScreenPoint(RB.transform.position);
 
-            Debug.Log("mousePos: " + mousePos);
-            Debug.Log("RB.transform.position: " + RB.transform.position);
-            Debug.Log("playerScreenPoint: " + playerScreenPoint);
 
             if (FacingDirection == 1)
             {

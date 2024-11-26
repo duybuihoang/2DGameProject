@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1161b004026ad47439661880b54168bc, type: 3}
   m_Name: TG_MoveState
   m_EditorClassIdentifier: 
-  movementSpeed: 3
+  movementSpeed: 10
   minRoamingTime: 0.5
   maxRoamingTime: 1

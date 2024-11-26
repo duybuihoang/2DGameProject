@@ -17,19 +17,9 @@ MonoBehaviour:
   <ComponentData>k__BackingField:
   - rid: 1810832438012674048
   - rid: 1810832438012674049
-  - rid: 28143537356013568
   references:
     version: 2
     RefIds:
-    - rid: 28143537356013568
-      type: {class: KnockbackData, ns: DuyBui.Weapon.Components, asm: Assembly-CSharp}
-      data:
-        name: KnockbackData
-        attackData:
-        - name: Attack 1
-          <strength>k__BackingField: 10
-        - name: Attack 2
-          <strength>k__BackingField: 10
     - rid: 1810832438012674048
       type: {class: DamageData, ns: DuyBui.Weapon.Components, asm: Assembly-CSharp}
       data:

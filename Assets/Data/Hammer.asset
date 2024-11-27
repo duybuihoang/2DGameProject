@@ -27,21 +27,21 @@ MonoBehaviour:
         name: ActionHitboxData
         attackData:
         - name: Attack 1
-          Debug: 1
+          Debug: 0
           <HitBox>k__BackingField:
             serializedVersion: 2
             x: 0
             y: -2.3
-            width: 3
+            width: 2.9
             height: 5.5
         - name: Attack 2
-          Debug: 0
+          Debug: 1
           <HitBox>k__BackingField:
             serializedVersion: 2
-            x: 0.63
-            y: 1.07
-            width: 0.82
-            height: 0.83
+            x: -3
+            y: -2.3
+            width: 2.9
+            height: 5.5
         <DetectableLayers>k__BackingField:
           serializedVersion: 2
           m_Bits: 1024

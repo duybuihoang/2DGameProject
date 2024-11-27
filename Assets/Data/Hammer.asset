@@ -12,9 +12,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a61a0e1c7adb4c41b48181eada6d25d, type: 3}
   m_Name: Hammer
   m_EditorClassIdentifier: 
-  <NumberOfAttacks>k__BackingField: 0
+  <NumberOfAttacks>k__BackingField: 2
   <SlashEffect>k__BackingField: {fileID: 0}
-  <ComponentData>k__BackingField: []
+  <ComponentData>k__BackingField:
+  - rid: 28143720265678848
+  - rid: 28143720265678849
+  - rid: 28143720265678850
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 28143720265678848
+      type: {class: ActionHitboxData, ns: DuyBui.Weapon.Components, asm: Assembly-CSharp}
+      data:
+        name: ActionHitboxData
+        attackData:
+        - name: Attack 1
+          Debug: 1
+          <HitBox>k__BackingField:
+            serializedVersion: 2
+            x: 0
+            y: -2.3
+            width: 3
+            height: 5.5
+        - name: Attack 2
+          Debug: 0
+          <HitBox>k__BackingField:
+            serializedVersion: 2
+            x: 0.63
+            y: 1.07
+            width: 0.82
+            height: 0.83
+        <DetectableLayers>k__BackingField:
+          serializedVersion: 2
+          m_Bits: 1024
+    - rid: 28143720265678849
+      type: {class: DamageData, ns: DuyBui.Weapon.Components, asm: Assembly-CSharp}
+      data:
+        name: DamageData
+        attackData:
+        - name: Attack 1
+          <Amount>k__BackingField: 0
+        - name: Attack 2
+          <Amount>k__BackingField: 0
+    - rid: 28143720265678850
+      type: {class: KnockbackData, ns: DuyBui.Weapon.Components, asm: Assembly-CSharp}
+      data:
+        name: KnockbackData
+        attackData:
+        - name: Attack 1
+          <strength>k__BackingField: 0
+        - name: Attack 2
+          <strength>k__BackingField: 0

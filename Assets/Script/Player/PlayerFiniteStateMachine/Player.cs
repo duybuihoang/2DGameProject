@@ -35,7 +35,7 @@ public class Player : MonoBehaviour
         Core = GetComponentInChildren<Core>();
 
         weapon = transform.GetComponentInChildren<Weapon>();
-        weapon.SetCore(Core);
+        weapon?.SetCore(Core);
 
         StateMachine = gameObject.AddComponent<PlayerStateMachine>();
 

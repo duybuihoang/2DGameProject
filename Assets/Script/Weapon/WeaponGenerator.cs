@@ -5,11 +5,11 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace DuyBui.Weapon.Components
+namespace DuyBui
 {
     public class WeaponGenerator : MonoBehaviour
     {
-        [SerializeField] private Weapon weapon;
+        [SerializeField] private DuyBui.Weapon.Components.Weapon weapon;
         [SerializeField] private WeaponDataSO data;
 
         private List<WeaponComponent> componentAlreadyOnWeapon = new List<WeaponComponent>();

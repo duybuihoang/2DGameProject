@@ -64,8 +64,19 @@ namespace DuyBui.CoreSystem
             }
         }
 
-         
-        
+        public void disableVelocity()
+        {
+            canSetVelocity = false ;
+        }
+
+        public void enableVelocity()
+        {
+            canSetVelocity = true;
+        }
+
+
+
+
         public void CheckIfShouldFlip(Vector2 mousePos)
         {
             Vector3 playerScreenPoint = Camera.main.WorldToScreenPoint(RB.transform.position);

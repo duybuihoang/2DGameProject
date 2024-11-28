@@ -11,7 +11,7 @@ namespace DuyBui.CoreSystem
 
         private CoreComp<Movement> movement;
 
-        protected bool isKnockBackActive { get; private set; }
+        public bool isKnockBackActive { get; private set; }
         private float knockBackStartTimer;
 
         private Stats stats;
@@ -47,7 +47,6 @@ namespace DuyBui.CoreSystem
             {
                 isKnockBackActive = false;
                 movement.Comp.canSetVelocity = true;
-                Stats?.CheckIsDeath();
             }
         }
        

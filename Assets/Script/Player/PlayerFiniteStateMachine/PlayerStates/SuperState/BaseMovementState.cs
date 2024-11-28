@@ -1,4 +1,3 @@
-using DuyBui.CoreSystem;
 using DuyBui.Weapon.Components;
 using System.Collections;
 using System.Collections.Generic;
@@ -12,8 +11,8 @@ public class BaseMovementState : PlayerState
 
     private Weapon weapon;
 
-    protected Movement Movement { get => movement ?? core.GetCoreComponent(ref movement); }
-    private Movement movement;
+    protected DuyBui.CoreSystem.Movement Movement { get => movement ?? core.GetCoreComponent(ref movement); }
+    private DuyBui.CoreSystem.Movement movement;
 
     private bool rollInput;
 

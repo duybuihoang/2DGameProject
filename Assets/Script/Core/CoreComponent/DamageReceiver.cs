@@ -15,8 +15,6 @@ namespace DuyBui.CoreSystem
 
         public void Damage(float amount)
         {
-            Debug.Log(core.transform.parent.name + " Damaged!");
-
             stats.Comp?.DecreaseHealth(amount);
         }
 

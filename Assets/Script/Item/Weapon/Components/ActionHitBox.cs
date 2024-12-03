@@ -37,6 +37,7 @@ namespace DuyBui.Weapon.Components
                 transform.position.y + currentAttackData.HitBox.center.y
                 );
 
+
             detected = Physics2D.OverlapBoxAll(offset, currentAttackData.HitBox.size, 0f, data.DetectableLayers);
 
             if (detected.Length == 0)

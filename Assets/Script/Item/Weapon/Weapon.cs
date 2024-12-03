@@ -9,7 +9,7 @@ using UnityEngine;
 
 namespace DuyBui.Weapon.Components
 {
-    public class Weapon : MonoBehaviour
+    public class Weapon : Item
     {
         public WeaponDataSO Data { get; private set; }
 
@@ -39,14 +39,13 @@ namespace DuyBui.Weapon.Components
         public GameObject WeaponGameObject { get; private set; }
 
         public AnimationEventHandler EventHandler { get; private set; }
-        public Core Core { get; private set; }
 
         [SerializeField] public GameObject SlashEffect;
         [SerializeField] public Transform SlashSpawnPoint;
         private GameObject slashAnimation;
 
 
-        public void Enter()
+        protected override void Enter()
         {
             if (isAttacking == false)
             {
@@ -60,17 +59,12 @@ namespace DuyBui.Weapon.Components
             }
         }
 
-        public void SetCore(Core core)
-        {
-            Core = core;
-        }
-
         public void SetData(WeaponDataSO data)
         {
             Data = data;
         }
 
-        private void Exit()
+        protected override void Exit()
         {
             //print($"{transform.name} exit");
 
@@ -81,19 +75,25 @@ namespace DuyBui.Weapon.Components
             isAttacking = false;
         }
 
-        private void Awake()
+        protected override void Awake()
         {
+            base.Awake();
             WeaponGameObject = transform.Find("WeaponSprite").gameObject;
+
             anim = WeaponGameObject.GetComponent<Animator>();
             EventHandler = WeaponGameObject.GetComponent<AnimationEventHandler>();
 
+
             inputHandler = GetComponentInParent<PlayerInputHandler>();
 
-            activeWeapon = transform.parent.gameObject;
+            activeWeapon = transform.gameObject;
             player = transform.parent.parent.gameObject;
+
         }
 
-        private void Update()
+
+
+        protected override void Update()
         {
             //attackCounterResetTimer.Tick();
             if(!isAttacking)
@@ -103,7 +103,7 @@ namespace DuyBui.Weapon.Components
             
             if(inputHandler.attack)
             {
-                this.Enter();
+                Enter();
             }
 
         }
@@ -113,12 +113,12 @@ namespace DuyBui.Weapon.Components
             currentAttackCounter = 0;
         }  
 
-        private void OnEnable()
+        protected override void OnEnable()
         {
             EventHandler.OnFinish += Exit;
         }
 
-        private void OnDisable()
+        protected override void OnDisable()
         {
             EventHandler.OnFinish -= Exit;
 

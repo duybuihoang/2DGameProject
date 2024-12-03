@@ -25,7 +25,6 @@ namespace DuyBui
             for (int i = 0; i < inventory.slots.Length; i++)
             {
                 Transform slot = inventoryPanel.GetChild(i);
-                Debug.Log(slot);
 
                 Transform basic = slot.GetChild(0);
                 Transform hover = slot.GetChild(1);
@@ -54,6 +53,7 @@ namespace DuyBui
         {
             UpdateUI();
             inventoryPanel.GetChild(pos).GetChild(1).gameObject.SetActive(true);
+            ActiveWeapon.Instance.SetCurrentItem(inventory.GetItem(pos));
         }    
     }
 }

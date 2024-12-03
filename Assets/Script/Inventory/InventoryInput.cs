@@ -16,7 +16,6 @@ namespace DuyBui
                 if (Input.GetKeyDown(KeyCode.Alpha1 + i))
                 {
                     selectedSlot = i;
-                    Debug.Log("Selected Slot: " + selectedSlot);
                     InventoryUI.Instance.SelectSlot(selectedSlot);
                 }
             }

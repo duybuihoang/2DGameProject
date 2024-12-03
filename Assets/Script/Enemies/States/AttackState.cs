@@ -36,7 +36,7 @@ namespace DuyBui.Enemies
 
         public virtual void TriggerAttack()
         {
-            Debug.Log("TriggerAttack");
+            //Debug.Log("TriggerAttack");
         }
 
         public virtual void FinishAttack()

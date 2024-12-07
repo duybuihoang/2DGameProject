@@ -8,6 +8,7 @@ namespace DuyBui.CoreSystem
     public class Stats : CoreComponent
     {
         public event Action OnHealthZero;
+        public event Action<float> OnHealthChange;
 
         [SerializeField] private float maxHealth;
         private float currentHealth;
@@ -17,6 +18,7 @@ namespace DuyBui.CoreSystem
 
         private KnockbackReceiver knockback;
         private KnockbackReceiver Knockback => knockback ? knockback : core.GetCoreComponent(ref knockback);
+
 
         protected override void Awake()
         {
@@ -38,11 +40,14 @@ namespace DuyBui.CoreSystem
             currentHealth -= amount;
 
             Flash?.StartFlash();
+            OnHealthChange?.Invoke(currentHealth / maxHealth);
         }
 
         public void IncreaseHealth(float amount)
         {
             currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
+            OnHealthChange?.Invoke(amount / maxHealth);
+
         }
 
         public void CheckIsDeath()

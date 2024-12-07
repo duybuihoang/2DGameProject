@@ -12,7 +12,6 @@ namespace DuyBui.Weapon.Components
         protected virtual void Awake()
         {
             GetCore();
-            Debug.Log(Core);
         }
 
         public void GetCore()

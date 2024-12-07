@@ -43,6 +43,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 3808404357
+    locked: 0
   - name: Map
     uniqueID: 4012478391
     locked: 0
@@ -51,6 +54,9 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 2447947791
+    locked: 0
+  - name: VFX
+    uniqueID: 992595211
     locked: 0
   - name: UI
     uniqueID: 1326519841

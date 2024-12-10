@@ -46,7 +46,7 @@ namespace DuyBui.CoreSystem
         public void IncreaseHealth(float amount)
         {
             currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
-            OnHealthChange?.Invoke(amount / maxHealth);
+            OnHealthChange?.Invoke(currentHealth / maxHealth);
 
         }
 

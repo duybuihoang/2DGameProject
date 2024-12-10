@@ -8,10 +8,17 @@ namespace DuyBui.Weapon.Components
     public class Item : MonoBehaviour
     {
         public Core Core { get; private set; }
+        public GameObject player { get; set; }
+        protected PlayerInputHandler inputHandler;
+
 
         protected virtual void Awake()
         {
             GetCore();
+            player = transform.parent.parent.gameObject;
+            inputHandler = GetComponentInParent<PlayerInputHandler>();
+
+
         }
 
         public void GetCore()

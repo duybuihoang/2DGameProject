@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ce9d119ac9f08043b7a3134076db0a6, type: 3}
+  m_Name: Health
+  m_EditorClassIdentifier: 
+  itemName: HealthBuff
+  icon: {fileID: 383536372, guid: a94e3de3ab0b3f44197b63e637fa2162, type: 3}
+  itemType: 1
+  maxStackSize: 10
+  ItemObj: {fileID: 8831463070934184291, guid: 40b87846acc18d04582cff1822ce86db, type: 3}

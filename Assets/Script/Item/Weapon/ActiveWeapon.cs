@@ -17,14 +17,17 @@ namespace DuyBui
 
         public void SetCurrentItem(ItemSO itemData)
         {
-            if(currentItem)
+
+            if (currentItem)
             {
                 Destroy(currentItem);
             }
+            if (itemData)
+            {
 
-            currentItem = Instantiate(itemData.ItemObj, transform);
-            currentItem.GetComponent<Item>().GetCore();
-
+                currentItem = Instantiate(itemData.ItemObj, transform);
+                currentItem.GetComponent<Item>().GetCore();
+            }
 
             Debug.Log(currentItem);
         }

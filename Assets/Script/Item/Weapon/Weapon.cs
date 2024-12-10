@@ -13,10 +13,8 @@ namespace DuyBui.Weapon.Components
     {
         public WeaponDataSO Data { get; private set; }
 
-        private PlayerInputHandler inputHandler;
         private GameObject activeWeapon;
 
-        public GameObject player { get; set; }
 
         public bool isAttacking = false;
 
@@ -83,12 +81,7 @@ namespace DuyBui.Weapon.Components
             anim = WeaponGameObject.GetComponent<Animator>();
             EventHandler = WeaponGameObject.GetComponent<AnimationEventHandler>();
 
-
-            inputHandler = GetComponentInParent<PlayerInputHandler>();
-
             activeWeapon = transform.gameObject;
-            player = transform.parent.parent.gameObject;
-
         }
 
 

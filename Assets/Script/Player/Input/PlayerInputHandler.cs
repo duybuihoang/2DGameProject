@@ -44,6 +44,11 @@ public class PlayerInputHandler : MonoBehaviour
             attack = false;
     }
 
+    public void UsedMouseInput()
+    {
+        attack = false;
+    }
+
     public void OnSpaceButtonInput(InputAction.CallbackContext context)
     {
         if (context.started)

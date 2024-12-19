@@ -18,6 +18,7 @@ namespace DuyBui.Weapon.Components
         {
             base.Enter();
             player.GetComponentInChildren<Stats>().IncreaseHealth(Data.effectAmount);
+
         }
 
         protected override void Exit()
@@ -40,6 +41,7 @@ namespace DuyBui.Weapon.Components
             base.Update();
             if (inputHandler.attack)
             {
+                inputHandler.UsedMouseInput();
                 Enter();
             }
         }

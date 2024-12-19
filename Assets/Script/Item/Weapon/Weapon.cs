@@ -53,7 +53,7 @@ namespace DuyBui.Weapon.Components
                 onEnter?.Invoke();
 
                 isAttacking = true;
-                TriggerSlashEffect();
+                //TriggerSlashEffect();
             }
         }
 

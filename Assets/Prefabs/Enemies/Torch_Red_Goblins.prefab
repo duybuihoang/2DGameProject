@@ -318,8 +318,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 574659033
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 1977709806, guid: 770a7952f61e7d34d86b5666dedf6cf5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -395,7 +395,7 @@ MonoBehaviour:
   atsm: {fileID: 1785645626442570580}
   entityData: {fileID: 11400000, guid: 527736cef4999ee48bc532ffeb46b011, type: 2}
   playerCheck: {fileID: 779511372688660811}
-  meleeAttackCheck: {fileID: 4949318016763946284}
+  attackCheck: {fileID: 0}
   idleStateData: {fileID: 11400000, guid: e7c8bee837400f44fbf3e70dfcec0031, type: 2}
   moveStateData: {fileID: 11400000, guid: 909850d2a848324468b12f34dca89727, type: 2}
   meleeAttackStateData: {fileID: 11400000, guid: 2c83fa07a39ba034fbad3bf22eaccbf3, type: 2}

@@ -14,19 +14,19 @@ namespace DuyBui
 
         private void Start()
         {
-            MenuManager.Instance.OnMenuStateChanged += HandleMenuStateChanged;
+            //MenuManager.Instance.OnMenuStateChanged += HandleMenuStateChanged;
         }
 
         private void OnDestroy()
         {
-            MenuManager.Instance.OnMenuStateChanged -= HandleMenuStateChanged;
+            //MenuManager.Instance.OnMenuStateChanged -= HandleMenuStateChanged;
         }
 
         private void HandleMenuStateChanged(MenuState newState)
         {
-            mainMenuPanel.SetActive(newState == MenuState.MainMenu);
-            optionsPanel.SetActive(newState == MenuState.Options);
-            loadingPanel.SetActive(newState == MenuState.Loading);
+            mainMenuPanel?.SetActive(newState == MenuState.MainMenu);
+            optionsPanel?.SetActive(newState == MenuState.Options);
+            loadingPanel?.SetActive(newState == MenuState.Loading);
         }
     }
 }

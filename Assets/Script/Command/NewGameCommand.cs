@@ -11,7 +11,7 @@ namespace DuyBui
         public void Execute()
         {
             MenuManager.Instance.SetMenuState(MenuState.Loading);
-            SceneManager.LoadScene("GameScene");
+            SceneManager.LoadScene("Level1");
         }
     }
 }

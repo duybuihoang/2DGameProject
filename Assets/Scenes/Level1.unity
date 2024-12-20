@@ -595,11 +595,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4949318016763946284, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
   m_PrefabInstance: {fileID: 646228204}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &593106678 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5889171659442335388, guid: 11d000d4b2da91948825b0c033ae04af, type: 3}
-  m_PrefabInstance: {fileID: 1510058809}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &623228622
 GameObject:
   m_ObjectHideFlags: 0
@@ -23099,52 +23094,6 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
---- !u!1 &993152903
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 993152904}
-  - component: {fileID: 993152905}
-  m_Layer: 10
-  m_Name: Death
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &993152904
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 993152903}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 593106678}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &993152905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 993152903}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16acf0cd175e9d146b2492d83e02eb5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deathParticles: {fileID: 6094213045938503887, guid: 8457203f54be5ca4394eb7f1d3da1e45, type: 3}
-  deathSFX: Block Break 1
 --- !u!4 &1019213391 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8654428738651118996, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
@@ -24797,10 +24746,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 5889171659442335388, guid: 11d000d4b2da91948825b0c033ae04af, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 993152904}
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11d000d4b2da91948825b0c033ae04af, type: 3}
 --- !u!20 &1533045596 stripped

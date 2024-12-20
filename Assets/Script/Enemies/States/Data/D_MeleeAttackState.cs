@@ -10,6 +10,7 @@ namespace DuyBui
         [Header("attack data")]
         public float attackRadius = 0.8f;
         public float attackDamage = 10f;
+        public string SFX;
 
         [Header("knockback data")]
         public float knockbackStrength = 10f;

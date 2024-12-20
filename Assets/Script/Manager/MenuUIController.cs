@@ -15,11 +15,13 @@ namespace DuyBui
         private void Start()
         {
             //MenuManager.Instance.OnMenuStateChanged += HandleMenuStateChanged;
+            AudioManager.Instance.PlayBGM("game-music-loop-6-144641");
         }
 
         private void OnDestroy()
         {
             //MenuManager.Instance.OnMenuStateChanged -= HandleMenuStateChanged;
+            AudioManager.Instance.StopBGM();
         }
 
         private void HandleMenuStateChanged(MenuState newState)

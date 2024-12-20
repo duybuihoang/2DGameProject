@@ -18,6 +18,7 @@ namespace DuyBui.Enemies
         public override void TriggerAttack()
         {
             base.TriggerAttack();
+            AudioManager.Instance.PlaySFX(stateData.SFX);
 
             Collider2D[] detectedObjects = Physics2D.OverlapCircleAll(attackPosition.position, stateData.attackRadius, stateData.whatIsPlayer);
 

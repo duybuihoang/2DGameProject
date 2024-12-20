@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a61a0e1c7adb4c41b48181eada6d25d, type: 3}
   m_Name: Hammer
   m_EditorClassIdentifier: 
+  SFX: axe-slash-1-106748
   <NumberOfAttacks>k__BackingField: 2
   <SlashEffect>k__BackingField: {fileID: 0}
   <ComponentData>k__BackingField:

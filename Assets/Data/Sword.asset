@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a61a0e1c7adb4c41b48181eada6d25d, type: 3}
   m_Name: Sword
   m_EditorClassIdentifier: 
+  SFX: sword-sound-260274
   <NumberOfAttacks>k__BackingField: 2
   <SlashEffect>k__BackingField: {fileID: 6012817263296891837, guid: d114b660ef246fa449284fe621a60e84, type: 3}
   <ComponentData>k__BackingField:

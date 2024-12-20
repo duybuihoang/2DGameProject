@@ -10,6 +10,7 @@ namespace DuyBui.Weapon.Components
         public Core Core { get; private set; }
         public GameObject player { get; set; }
         protected PlayerInputHandler inputHandler;
+        [SerializeField] string SFX;
 
 
         protected virtual void Awake()
@@ -45,7 +46,10 @@ namespace DuyBui.Weapon.Components
         {
         }
 
-        protected virtual void Enter() { }
+        protected virtual void Enter()
+        {
+        
+        }
         protected virtual void Exit() { }
         #endregion
     }

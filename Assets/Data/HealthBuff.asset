@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9497eab1f8edcc145a059fce3dc5b505, type: 3}
   m_Name: HealthBuff
   m_EditorClassIdentifier: 
+  SFX: healpop-46004
   itemType: 0
-  effectAmount: 10
+  effectAmount: 40

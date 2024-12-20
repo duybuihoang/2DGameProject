@@ -17,6 +17,7 @@ namespace DuyBui
 
         public void OnClick()
         {
+            AudioManager.Instance.PlaySFX("90s-game-ui-6-185099");
             command.Execute();
         }
     }

@@ -7,6 +7,7 @@ namespace DuyBui.CoreSystem
     public class DamageReceiver : CoreComponent, IDamageable, IParticle
     {
         [SerializeField] private GameObject HitParticle;
+        [SerializeField] string SFX;
         private CoreComp<Stats> stats;
         private ParticleManager ParticleManager => particleManager ? particleManager : core.GetCoreComponent(ref particleManager);
         private ParticleManager particleManager;
@@ -15,6 +16,7 @@ namespace DuyBui.CoreSystem
 
         public void Damage(float amount)
         {
+            AudioManager.Instance.PlaySFX(SFX);
             stats.Comp?.DecreaseHealth(amount);
         }
 

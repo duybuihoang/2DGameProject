@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackRadius: 0.8
   attackDamage: 15
+  SFX: axe-slash-1-106748
   knockbackStrength: 10
   whatIsPlayer:
     serializedVersion: 2

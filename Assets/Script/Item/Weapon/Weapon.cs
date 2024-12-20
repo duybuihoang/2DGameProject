@@ -54,6 +54,7 @@ namespace DuyBui.Weapon.Components
 
                 isAttacking = true;
                 //TriggerSlashEffect();
+                AudioManager.Instance.PlaySFX(Data.SFX);
             }
         }
 

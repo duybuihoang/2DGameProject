@@ -8,12 +8,14 @@ namespace DuyBui.CoreSystem
     public class Death : CoreComponent
     {
         [SerializeField] private GameObject deathParticles;
+        [SerializeField] private string deathSFX;
         private Stats stats;
         private Stats Stats => stats ? stats : core.GetCoreComponent(ref stats);
         private ParticleManager ParticleManager => particleManager ? particleManager : core.GetCoreComponent(ref particleManager);
         private ParticleManager particleManager;
         public void Die()
         {
+            AudioManager.Instance.PlaySFX(deathSFX);
             ParticleManager?.StartParticles(deathParticles);
             core.transform.parent.gameObject.SetActive(false);
         }

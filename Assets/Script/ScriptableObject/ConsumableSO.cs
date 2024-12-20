@@ -6,7 +6,7 @@ namespace DuyBui
 {
     [CreateAssetMenu(fileName = "newConsumeData", menuName = "Data/Consumable Data/Basic Consumable Data", order = 0)]
 
-    public class ConsumableSO : ScriptableObject    
+    public class ConsumableSO : BaseSO    
     {
         public enum ConsumeType
         {

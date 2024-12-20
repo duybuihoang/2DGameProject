@@ -31,6 +31,7 @@ public class TNT : MonoBehaviour
             isExploded = true;
 
             randomScaleExplosion();
+            AudioManager.Instance.PlaySFX("explosionCrunch_000");
 
         }
     }

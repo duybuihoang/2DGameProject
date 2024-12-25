@@ -38,7 +38,7 @@ namespace DuyBui
         {
             if (AudioManager.Instance)
             {
-                AudioManager.Instance.StopBGM();
+                //AudioManager.Instance.StopBGM();
             }
         }
     }

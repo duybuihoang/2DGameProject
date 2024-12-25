@@ -21,7 +21,7 @@ namespace DuyBui
         private void OnDestroy()
         {
             //MenuManager.Instance.OnMenuStateChanged -= HandleMenuStateChanged;
-            AudioManager.Instance.StopBGM();
+            //AudioManager.Instance.StopBGM();
         }
 
         private void HandleMenuStateChanged(MenuState newState)

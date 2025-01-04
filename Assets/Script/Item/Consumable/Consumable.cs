@@ -17,9 +17,12 @@ namespace DuyBui.Weapon.Components
         protected override void Enter()
         {
             base.Enter();
+
             AudioManager.Instance.PlaySFX(Data.SFX);
             player.GetComponentInChildren<Stats>().IncreaseHealth(Data.effectAmount);
+            InventoryUI.Instance.UseItem();
 
+            this.Exit();
         }
 
         protected override void Exit()

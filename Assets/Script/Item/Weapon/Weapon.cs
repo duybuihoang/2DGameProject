@@ -16,7 +16,7 @@ namespace DuyBui.Weapon.Components
         private GameObject activeWeapon;
 
 
-        public bool isAttacking = false;
+        //public bool isAttacking = false;
 
         private int currentAttackCounter;
         public int CurrentAttackCounter
@@ -45,17 +45,16 @@ namespace DuyBui.Weapon.Components
 
         protected override void Enter()
         {
-            if (isAttacking == false)
-            {
-                anim.SetBool("active", true);
-                anim.SetInteger("counter", CurrentAttackCounter);
+            base.Enter();
+          
+            anim.SetBool("active", true);
+            anim.SetInteger("counter", CurrentAttackCounter);
 
-                onEnter?.Invoke();
+            onEnter?.Invoke();
 
-                isAttacking = true;
-                //TriggerSlashEffect();
-                AudioManager.Instance.PlaySFX(Data.SFX);
-            }
+            //TriggerSlashEffect();
+            AudioManager.Instance.PlaySFX(Data.SFX);
+            
         }
 
         public void SetData(WeaponDataSO data)
@@ -71,7 +70,7 @@ namespace DuyBui.Weapon.Components
             CurrentAttackCounter++;
             onExit?.Invoke();
 
-            isAttacking = false;
+            //isAttacking = false;
         }
 
         protected override void Awake()
@@ -90,7 +89,7 @@ namespace DuyBui.Weapon.Components
         protected override void Update()
         {
             //attackCounterResetTimer.Tick();
-            if(!isAttacking)
+            if(!isDoingAction)
             {
                 MouseFollowWithOffset();
             }    

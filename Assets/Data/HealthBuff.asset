@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9497eab1f8edcc145a059fce3dc5b505, type: 3}
   m_Name: HealthBuff
   m_EditorClassIdentifier: 
+  itemName: Health Potion
+  icon: {fileID: 383536372, guid: a94e3de3ab0b3f44197b63e637fa2162, type: 3}
+  itemType: 1
+  maxStackSize: 10
+  ItemObj: {fileID: 8831463070934184291, guid: 40b87846acc18d04582cff1822ce86db, type: 3}
   SFX: healpop-46004
-  itemType: 0
+  consumeType: 0
   effectAmount: 40

@@ -12,4 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5080946338f9324f9651fcaebf7d982, type: 3}
   m_Name: playerData
   m_EditorClassIdentifier: 
-  movementVelocity: 5
+  maxHealth: 100
+  maxMana: 50
+  movementVelocity: 10
+  rollCooldown: 0.5
+  maxHoldTime: 1
+  holdTimeScale: 0.25
+  rollTime: 0.2
+  rollVelocity: 30
+  drag: 10
+  rollEndYMultiplier: 0.2
+  distBetweenAfterImages: 0.5

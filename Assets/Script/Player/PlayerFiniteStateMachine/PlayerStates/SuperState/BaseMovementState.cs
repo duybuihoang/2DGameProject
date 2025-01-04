@@ -43,7 +43,7 @@ public class BaseMovementState : PlayerState
         mousePos = player.InputHandler.MouseInput;
         rollInput = player.InputHandler.RollInput;
 
-        if(!(weapon != null ? weapon.isAttacking: false))
+        if(!(weapon != null ? weapon.isDoingAction: false))
         {
             Movement?.CheckIfShouldFlip(mousePos);
         }

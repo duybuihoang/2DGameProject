@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a61a0e1c7adb4c41b48181eada6d25d, type: 3}
   m_Name: Hammer
   m_EditorClassIdentifier: 
+  itemName: Mace
+  icon: {fileID: -292003807, guid: a9fd60abb988fe348b47c97edcb69af6, type: 3}
+  itemType: 0
+  maxStackSize: 1
+  ItemObj: {fileID: 4948349054439528185, guid: ab7f5bbb6c5deae4d93c5280c546a9c0, type: 3}
   SFX: axe-slash-1-106748
   <NumberOfAttacks>k__BackingField: 2
   <SlashEffect>k__BackingField: {fileID: 0}

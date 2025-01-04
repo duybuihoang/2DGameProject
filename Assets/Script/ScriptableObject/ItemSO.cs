@@ -15,5 +15,6 @@ namespace DuyBui
         public ItemType itemType;
         public int maxStackSize;
         public GameObject ItemObj;
+        public string SFX;
     }
 }

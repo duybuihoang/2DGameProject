@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.PlayerSettings;
 
 namespace DuyBui
 {
@@ -9,7 +11,10 @@ namespace DuyBui
     {
         public Inventory inventory;
         public Transform inventoryPanel;
+        public Transform hover;
         public GameObject slotPrefab;
+        private int currentSelectedSlot;
+
 
         void Start()
         {
@@ -25,35 +30,71 @@ namespace DuyBui
             for (int i = 0; i < inventory.slots.Length; i++)
             {
                 Transform slot = inventoryPanel.GetChild(i);
-
                 Transform basic = slot.GetChild(0);
-                Transform hover = slot.GetChild(1);
-
-                hover.gameObject.SetActive(false);
-
 
                 Image icon = slot.GetChild(2).GetComponent<Image>();
-                //Text quantity = slot.GetChild(1).GetComponent<Text>();
+                TextMeshProUGUI quantity = slot.GetChild(3).GetComponent<TextMeshProUGUI>();
+                Debug.Log(quantity.name);
 
-                if (inventory.slots[i] != null)
+                if (inventory.slots[i] != null )
                 {
                     icon.sprite = inventory.slots[i].icon;
                     icon.enabled = true;
-                   // quantity.text = inventory.quantities[i].ToString();
+
+                    if (inventory.slots[i].itemType == ItemType.Consumable)
+                    {
+                        quantity.text = inventory.quantities[i].ToString();
+                    }
+                    else
+                    {
+                        quantity.text = "";
+                    }
                 }
                 else
                 {
                     icon.enabled = false;
-                    //quantity.text = "";
+                    quantity.text = "";
                 }
             }
         }
 
+        public void UpdateHover()
+        {
+            if(hover == null)
+            {
+                hover = inventoryPanel.GetChild(0).GetChild(1);
+            }
+            hover.gameObject.SetActive(false);
+            hover = inventoryPanel.GetChild(currentSelectedSlot).GetChild(1);
+            hover.gameObject.SetActive(true);
+        }
+        
+
         public void SelectSlot(int pos)
         {
+            currentSelectedSlot = pos;
             UpdateUI();
-            inventoryPanel.GetChild(pos).GetChild(1).gameObject.SetActive(true);
+            UpdateHover();
             ActiveWeapon.Instance.SetCurrentItem(inventory.GetItem(pos));
         }    
+
+        public void UseItem()
+        {
+            inventory.RemoveItem(currentSelectedSlot, 1);
+            UpdateUI();
+        }
+
+        public bool AddItem(ItemSO item)
+        {
+            if(inventory.TryAddItem(item, 1))
+            {
+                UpdateUI();
+                return true;
+            }
+            return false;
+        }
+
+
+
     }
 }

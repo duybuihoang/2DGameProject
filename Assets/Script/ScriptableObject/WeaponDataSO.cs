@@ -8,7 +8,7 @@ using UnityEngine;
 namespace DuyBui.Weapon.Components
 {
     [CreateAssetMenu(fileName = "newWeaponData", menuName = "Data/Weapon Data/Basic Weapon Data", order = 0)]
-    public class WeaponDataSO : BaseSO
+    public class WeaponDataSO : ItemSO
     {
         [field: SerializeField] public int NumberOfAttacks { get; private set; }
         [field: SerializeField] public GameObject SlashEffect { get; private set; }

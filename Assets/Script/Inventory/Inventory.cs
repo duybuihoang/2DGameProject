@@ -9,13 +9,24 @@ namespace DuyBui
         public ItemSO[] slots = new ItemSO[9];
         public int[] quantities = new int[9];
 
-        public void AddItem(ItemSO item, int quantity, int slot)
+        public bool TryAddItem(ItemSO item, int quantity)
         {
-            if (slots[slot] == null || slots[slot] == item)
+            bool added = false;
+
+            for (int i = 0; i < 9; i++)
             {
-                slots[slot] = item;
-                quantities[slot] += quantity;
+                if (slots[i] == null || slots[i] == item)
+                {
+                    slots[i] = item;
+                    if(item.itemType == ItemType.Consumable)
+                    {
+                        quantities[i] += quantity;
+                    }
+                    added = true;
+                    break;
+                }
             }
+            return added;
         }
 
         public void RemoveItem(int slot, int quantity)

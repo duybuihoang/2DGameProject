@@ -6,7 +6,7 @@ namespace DuyBui
 {
     [CreateAssetMenu(fileName = "newConsumeData", menuName = "Data/Consumable Data/Basic Consumable Data", order = 0)]
 
-    public class ConsumableSO : BaseSO    
+    public class ConsumableSO : ItemSO    
     {
         public enum ConsumeType
         {
@@ -15,7 +15,7 @@ namespace DuyBui
         }
 
         [Header("Consumable Item Settings")]
-        public ConsumeType itemType; // Type of the consumable item
+        public ConsumeType consumeType; // Type of the consumable item
         public float effectAmount;
 
     }

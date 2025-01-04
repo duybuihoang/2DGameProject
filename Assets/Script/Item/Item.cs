@@ -9,9 +9,10 @@ namespace DuyBui.Weapon.Components
     {
         public Core Core { get; private set; }
         public GameObject player { get; set; }
-        protected PlayerInputHandler inputHandler;
+        public PlayerInputHandler inputHandler;
         [SerializeField] string SFX;
 
+        public bool isDoingAction = false;
 
         protected virtual void Awake()
         {
@@ -48,9 +49,15 @@ namespace DuyBui.Weapon.Components
 
         protected virtual void Enter()
         {
-        
+            if (!isDoingAction)
+                return;
+
+            isDoingAction = true;
         }
-        protected virtual void Exit() { }
+        protected virtual void Exit()
+        {
+            isDoingAction = false;
+        }
         #endregion
     }
 }

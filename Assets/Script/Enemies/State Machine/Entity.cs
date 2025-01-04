@@ -52,7 +52,7 @@ namespace DuyBui.Enemies
 
         public virtual void OnDrawGizmos()
         {
-            if(Core!= null)
+            if(Core != null)
             {
                 Gizmos.DrawWireSphere(playerCheck.position, entityData.detectRadius);
                 Gizmos.DrawWireSphere(attackCheck.position, entityData.TriggerAttackActionRadius);

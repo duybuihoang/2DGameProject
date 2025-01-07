@@ -21,6 +21,12 @@ public class Shootable : Projectile
 
     private Rigidbody2D rb;
 
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+
     private void FixedUpdate()
     {
         if(!hasHitWall)

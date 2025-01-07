@@ -11,11 +11,13 @@ public class PlayerInputHandler : MonoBehaviour
 
     public Vector2 RawMovementInput { get; private set; }
     public Vector2 MouseInput { get; private set; }
+   
 
     public float inputX { get; private set; }
 
     public bool attack;
     public bool RollInput;
+    public bool EscInput;
 
     private void Start()
     {
@@ -54,8 +56,14 @@ public class PlayerInputHandler : MonoBehaviour
         if (context.started)
             RollInput = true;
     }
+
+    public void OnEscButtonInput(InputAction.CallbackContext context)
+    {
+        if (context.started)
+            EscInput = !EscInput;
+    }    
+
     public void UseRollInput() => RollInput = false;
-
-
+    public void UseEscInput() => EscInput = false;
 
 }

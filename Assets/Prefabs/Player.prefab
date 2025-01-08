@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4820224550589576340}
   m_Layer: 10
   m_Name: Combat
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -478,6 +478,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 542bf544-d8f5-4b49-99c5-6d127464c84e
     m_ActionName: Gameplay/Dash[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ad978812-cb59-4fbf-b1dd-1c042a27e1a7
+    m_ActionName: Gameplay/Setting[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Gameplay
@@ -524,7 +528,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 10
-  m_LinearDrag: 3
+  m_LinearDrag: 10
   m_AngularDrag: 1
   m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: eb04665876f2a3c49b91b89066f39f6e, type: 2}

@@ -11,6 +11,12 @@ namespace DuyBui.Weapon.Components
         {
             var projectile = GameObject.Instantiate(currentAttackData.Projectile, weapon.transform.position, Quaternion.identity);
             var projectileScript = projectile.GetComponent<Projectile>();
+
+            Debug.Log("weapon.transform.position: " + weapon.transform.position);
+            Debug.Log("weapon.inputHandler.MouseInput: " + weapon.inputHandler.MouseInput);
+            Debug.Log("data.damage: " + data.damage);
+            Debug.Log(projectileScript);
+
             projectileScript.Fire(weapon.transform.position, weapon.inputHandler.MouseInput, data.damage);
         }
 

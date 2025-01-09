@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 30
   detectRadius: 10
-  TriggerAttackActionRadius: 1
+  TriggerAttackActionRadius: 1.2
   whatIsGround:
     serializedVersion: 2
     m_Bits: 0

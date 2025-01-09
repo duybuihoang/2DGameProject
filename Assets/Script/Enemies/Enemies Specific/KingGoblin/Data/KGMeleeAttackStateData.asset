@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f22ba1616bd13d246a3cc9b90c36f265, type: 3}
   m_Name: KGMeleeAttackStateData
   m_EditorClassIdentifier: 
-  attackRadius: 2.5
+  attackRadius: 5.05
   attackDamage: 10
   SFX: Drop
   knockbackStrength: 10

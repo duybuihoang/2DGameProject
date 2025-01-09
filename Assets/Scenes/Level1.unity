@@ -803,12 +803,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8277916437080438255, guid: ec045597478ace84197d5b3cadef1eb0, type: 3}
       propertyPath: m_TagString
-      value: MainCamera
+      value: Camera
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5681348435514781976, guid: ec045597478ace84197d5b3cadef1eb0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1886831215}
   m_SourcePrefab: {fileID: 100100000, guid: ec045597478ace84197d5b3cadef1eb0, type: 3}
 --- !u!4 &178044648 stripped
 Transform:
@@ -35779,6 +35782,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4949318016763946284, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
   m_PrefabInstance: {fileID: 1534281921}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1078402260 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8603644459466979912, guid: ec045597478ace84197d5b3cadef1eb0, type: 3}
+  m_PrefabInstance: {fileID: 154378153}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1081775833 stripped
 Transform:
@@ -128862,6 +128870,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4949318016763946284, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
   m_PrefabInstance: {fileID: 1865161550}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1886831213 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5681348435514781976, guid: ec045597478ace84197d5b3cadef1eb0, type: 3}
+  m_PrefabInstance: {fileID: 154378153}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1886831215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886831213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de1be76a455e6a349acc3ac0d8a511fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraObject: {fileID: 1078402260}
+  confiner: {fileID: 1405009262}
 --- !u!1001 &1896153385
 PrefabInstance:
   m_ObjectHideFlags: 0

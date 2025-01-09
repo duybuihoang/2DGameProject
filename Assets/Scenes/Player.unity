@@ -1312,10 +1312,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: BossGoblin
       objectReference: {fileID: 0}
-    - target: {fileID: 3414312439511917716, guid: dd3606d2306eefb4e9b0f2d448720c17, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4650734875246699275, guid: dd3606d2306eefb4e9b0f2d448720c17, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.55
@@ -1355,6 +1351,18 @@ PrefabInstance:
     - target: {fileID: 4650734875246699275, guid: dd3606d2306eefb4e9b0f2d448720c17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6127730540213602821, guid: dd3606d2306eefb4e9b0f2d448720c17, type: 3}
+      propertyPath: m_Mass
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6127730540213602821, guid: dd3606d2306eefb4e9b0f2d448720c17, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: eb04665876f2a3c49b91b89066f39f6e, type: 2}
+    - target: {fileID: 6127730540213602821, guid: dd3606d2306eefb4e9b0f2d448720c17, type: 3}
+      propertyPath: m_LinearDrag
+      value: 1000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

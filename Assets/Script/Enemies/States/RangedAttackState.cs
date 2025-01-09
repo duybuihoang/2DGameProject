@@ -23,7 +23,7 @@ namespace DuyBui.Enemies
             projectile = GameObject.Instantiate(stateData.projectile, attackPosition.position, attackPosition.rotation);
 
             projectileScript = projectile.GetComponent<Projectile>();
-            projectileScript.Fire(attackPosition.position, (Vector2) target.transform.position + target.offset , stateData.projectileDamage);
+            projectileScript?.Fire(attackPosition.position, (Vector2) target.transform.position + target.offset , stateData.projectileDamage);
 
         }
     }

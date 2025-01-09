@@ -157,6 +157,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7932518185684922398}
+  - component: {fileID: 8548089525525189970}
   m_Layer: 0
   m_Name: Cameras
   m_TagString: MainCamera
@@ -181,6 +182,20 @@ Transform:
   - {fileID: 7783867659005207678}
   m_Father: {fileID: 5613282987928988180}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8548089525525189970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5681348435514781976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de1be76a455e6a349acc3ac0d8a511fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraObject: {fileID: 8603644459466979912}
+  confiner: {fileID: 7059858785275164909}
 --- !u!1 &8277916437080438255
 GameObject:
   m_ObjectHideFlags: 0
@@ -195,7 +210,7 @@ GameObject:
   - component: {fileID: 7059858785275164909}
   m_Layer: 0
   m_Name: Player Camera
-  m_TagString: Untagged
+  m_TagString: Camera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -209,7 +224,7 @@ Transform:
   m_GameObject: {fileID: 8277916437080438255}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 41.6, y: -8.1, z: -10}
+  m_LocalPosition: {x: 36.68, y: 59.56, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -238,7 +253,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 8.4375
+    OrthographicSize: 6
     NearClipPlane: 0.1
     FarClipPlane: 5000
     Dutch: 0
@@ -321,7 +336,7 @@ Transform:
   m_GameObject: {fileID: 8603644459466979912}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 41.6, y: -8.1, z: -10}
+  m_LocalPosition: {x: 36.68, y: 59.56, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -362,7 +377,7 @@ Camera:
   far clip plane: 5000
   field of view: 60
   orthographic: 1
-  orthographic size: 8.4375
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

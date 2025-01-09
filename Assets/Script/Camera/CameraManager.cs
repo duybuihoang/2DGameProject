@@ -11,7 +11,7 @@ namespace DuyBui
         public CinemachineConfiner2D confiner;
         private void Awake()
         {
-            cameraObject = GameObject.FindGameObjectWithTag("MainCamera");
+            cameraObject = GameObject.FindGameObjectWithTag("Camera");
             confiner = cameraObject.GetComponent<CinemachineConfiner2D>();
         }
         public void SetCamPolygon(PolygonCollider2D poly)

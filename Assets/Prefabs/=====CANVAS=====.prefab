@@ -95,7 +95,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 1326519841
   m_SortingOrder: 0
@@ -475,7 +475,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 0}
   inventoryPanel: {fileID: 4091382589379290808}
-  slotPrefab: {fileID: 0}
+  hover: {fileID: 0}
+  slotPrefab: {fileID: 6938815328310463800, guid: a589512f81471a147a487d4998bb6239, type: 3}
 --- !u!114 &8395407549833388019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1830,13 +1831,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: ManaBar
       objectReference: {fileID: 0}
-    - target: {fileID: 5656069890314836263, guid: 0830890555604bd4dbb7a06dbb903281, type: 3}
-      propertyPath: m_AnchorMax.x
+    - target: {fileID: 5394432990613503366, guid: 0830890555604bd4dbb7a06dbb903281, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5656069890314836263, guid: 0830890555604bd4dbb7a06dbb903281, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5656069890314836263, guid: 0830890555604bd4dbb7a06dbb903281, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7483078965809163919, guid: 0830890555604bd4dbb7a06dbb903281, type: 3}
       propertyPath: m_Pivot.x

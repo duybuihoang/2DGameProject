@@ -54,8 +54,8 @@ namespace DuyBui.Enemies
         {
             if(Core != null)
             {
-                Gizmos.DrawWireSphere(playerCheck.position, entityData.detectRadius);
-                Gizmos.DrawWireSphere(attackCheck.position, entityData.TriggerAttackActionRadius);
+                Gizmos.DrawWireSphere(playerCheck.position, entityData.detectRadius * transform.localScale.magnitude);
+                Gizmos.DrawWireSphere(attackCheck.position, entityData.TriggerAttackActionRadius * transform.localScale.magnitude);
 
             }
         }
@@ -66,15 +66,15 @@ namespace DuyBui.Enemies
 
         public virtual bool CheckPlayerInDetectedRange()
         {
-            return Physics2D.OverlapCircle(playerCheck.position, entityData.detectRadius, entityData.whatIsPlayer);
+            return Physics2D.OverlapCircle(playerCheck.position, entityData.detectRadius * transform.localScale.magnitude, entityData.whatIsPlayer);
         }
         public virtual bool CheckPlayerInAttackRangeAction()
         {
-            return Physics2D.OverlapCircle(attackCheck.position, entityData.TriggerAttackActionRadius, entityData.whatIsPlayer);
+            return Physics2D.OverlapCircle(attackCheck.position, entityData.TriggerAttackActionRadius * transform.localScale.magnitude, entityData.whatIsPlayer);
         }
         public virtual Collider2D GetPlayerInDetectedRange()
         {
-            return Physics2D.OverlapCircle(playerCheck.position, entityData.detectRadius, entityData.whatIsPlayer) ;
+            return Physics2D.OverlapCircle(playerCheck.position, entityData.detectRadius * transform.localScale.magnitude, entityData.whatIsPlayer) ;
         }
     }
 }

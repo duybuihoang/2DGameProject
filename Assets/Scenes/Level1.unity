@@ -745,6 +745,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 407358494188448078, guid: ec045597478ace84197d5b3cadef1eb0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 36.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 407358494188448078, guid: ec045597478ace84197d5b3cadef1eb0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 59.56
+      objectReference: {fileID: 0}
     - target: {fileID: 2574979990880296877, guid: ec045597478ace84197d5b3cadef1eb0, type: 3}
       propertyPath: orthographic size
       value: 6
@@ -800,6 +808,14 @@ PrefabInstance:
     - target: {fileID: 6033266996557765451, guid: ec045597478ace84197d5b3cadef1eb0, type: 3}
       propertyPath: m_Lens.OrthographicSize
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7783867659005207678, guid: ec045597478ace84197d5b3cadef1eb0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 36.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 7783867659005207678, guid: ec045597478ace84197d5b3cadef1eb0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 59.56
       objectReference: {fileID: 0}
     - target: {fileID: 8277916437080438255, guid: ec045597478ace84197d5b3cadef1eb0, type: 3}
       propertyPath: m_TagString
@@ -37326,6 +37342,10 @@ PrefabInstance:
       value: BossGoblin
       objectReference: {fileID: 0}
     - target: {fileID: 4650734875246699275, guid: dd3606d2306eefb4e9b0f2d448720c17, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4650734875246699275, guid: dd3606d2306eefb4e9b0f2d448720c17, type: 3}
       propertyPath: m_LocalPosition.x
       value: 42.24
       objectReference: {fileID: 0}
@@ -39795,11 +39815,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6427310683552048718, guid: 11d000d4b2da91948825b0c033ae04af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 41.6
+      value: 36.68
       objectReference: {fileID: 0}
     - target: {fileID: 6427310683552048718, guid: 11d000d4b2da91948825b0c033ae04af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.1
+      value: 59.56
       objectReference: {fileID: 0}
     - target: {fileID: 6427310683552048718, guid: 11d000d4b2da91948825b0c033ae04af, type: 3}
       propertyPath: m_LocalPosition.z

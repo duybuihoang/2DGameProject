@@ -51,6 +51,8 @@ namespace DuyBui.Weapon.Components
             anim.SetInteger("counter", CurrentAttackCounter);
 
             onEnter?.Invoke();
+            EventHandler.OnSFXActionTrigger(Data.SFX);
+
 
             //TriggerSlashEffect();
             AudioManager.Instance.PlaySFX(Data.SFX);
@@ -119,19 +121,18 @@ namespace DuyBui.Weapon.Components
 
         private void MouseFollowWithOffset()
         {
-            Vector3 mousePos = inputHandler.MouseInput;
-            Vector3 playerScreenPoint = Camera.main.WorldToScreenPoint(player.transform.position);
-
-            float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
-
-            if (mousePos.x > playerScreenPoint.x)
+            if(!isDoingAction)
             {
+                Vector3 mousePos = inputHandler.MouseInput;
+                Vector3 playerScreenPoint = Camera.main.WorldToScreenPoint(player.transform.position);
+
+                float angle = Mathf.Atan2(mousePos.y - playerScreenPoint.y, mousePos.x - playerScreenPoint.x) * Mathf.Rad2Deg;
+
                 activeWeapon.transform.rotation = Quaternion.Euler(0, 0, angle);
             }
-            else
-            {
-                activeWeapon.transform.rotation = Quaternion.Euler(0, -180, angle);
-            }
+
+
+
         }
 
         //todo: bring slash effect to weapon component

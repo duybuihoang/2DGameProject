@@ -19,12 +19,13 @@ namespace DuyBui.Enemies
             base.TriggerAttack();
 
             Collider2D target = Physics2D.OverlapCircle(attackPosition.position, stateData.attackRadius, stateData.whatIsPlayer);
+            if (target)
+            {
+                projectile = GameObject.Instantiate(stateData.projectile, attackPosition.position, attackPosition.rotation);
 
-            projectile = GameObject.Instantiate(stateData.projectile, attackPosition.position, attackPosition.rotation);
-
-            projectileScript = projectile.GetComponent<Projectile>();
-            projectileScript?.Fire(attackPosition.position, (Vector2) target.transform.position + target.offset , stateData.projectileDamage);
-
+                projectileScript = projectile.GetComponent<Projectile>();
+                projectileScript?.Fire(attackPosition.position, (Vector2)target.transform.position + target.offset, stateData.projectileDamage);
+            }
         }
     }
 }

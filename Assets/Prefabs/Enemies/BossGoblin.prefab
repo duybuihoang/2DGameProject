@@ -435,6 +435,7 @@ MonoBehaviour:
   moveStateData: {fileID: 11400000, guid: b347c3ca5c14deb46949cd93ddeb5cbe, type: 2}
   meleeAttackStateData: {fileID: 11400000, guid: aa404a4a2589365479ba994b14064209, type: 2}
   healStateData: {fileID: 11400000, guid: 9daaf1b346c2d9e4f99d47180f27ae14, type: 2}
+  summonStateData: {fileID: 11400000, guid: 2acc51ec5ad05d64694e201435886b0d, type: 2}
   meleeAttackPosition: {fileID: 6344679143855831513}
 --- !u!1 &4235743314900693017
 GameObject:

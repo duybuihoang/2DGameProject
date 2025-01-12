@@ -19,6 +19,8 @@ namespace DuyBui.Enemies
 
         protected float idleTime;
 
+        protected float summonTime;
+
 
         public IdleState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, D_IdleState stateData) : base(entity, stateMachine, animBoolName)
         {

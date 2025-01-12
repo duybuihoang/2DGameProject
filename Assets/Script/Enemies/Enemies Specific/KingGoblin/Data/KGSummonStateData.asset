@@ -17,5 +17,5 @@ MonoBehaviour:
   summonList:
   - {fileID: 3037213915155169980, guid: db698d8d53a65c541868627ab87546e0, type: 3}
   - {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
-  summonRadius: 1
+  summonRadius: 13
   summonInterval: 20

@@ -41,7 +41,7 @@ namespace DuyBui
             moveState = new KG_MoveState(this, stateMachine, "move", moveStateData, this);
             attackState = new KG_MeleeAttackState(this, stateMachine, "attack", meleeAttackPosition, meleeAttackStateData, this);
             healState = new KG_HealState(this, stateMachine, "heal", healStateData, this);
-            summonState = new KG_SummonState(this, stateMachine, "summom", summonStateData, this);
+            summonState = new KG_SummonState(this, stateMachine, "summon", summonStateData, this);
         }
 
         private void Start()

@@ -13,7 +13,7 @@ namespace DuyBui.Enemies
         private DamageReceiver damageReceiver;
 
         protected bool isAnimationFinish;
-        protected D_SummonState stateData;
+        public D_SummonState stateData;
 
 
         public SummonState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, D_SummonState stateData) : base(entity, stateMachine, animBoolName)
@@ -49,8 +49,9 @@ namespace DuyBui.Enemies
             {
                 GameObject minions = summonList[Random.Range(0, summonList.Count)];
 
-                Vector2 randomPos = Random.insideUnitCircle * stateData.summonRadius;
+                Vector2 randomPos = entity.transform.position + (Vector3)(Random.insideUnitCircle * stateData.summonRadius);
                 Vector3 summonPos = new Vector3(randomPos.x, randomPos.y, 0);
+                Debug.Log(summonPos);
 
                 GameObject summonedMinion = Object.Instantiate(minions, summonPos, Quaternion.identity);
 

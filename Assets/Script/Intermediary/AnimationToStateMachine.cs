@@ -8,6 +8,18 @@ namespace DuyBui.Enemies
     {
         public AttackState attackState;
         public HealState healState;
+        public SummonState summonState;
+
+
+        private void TriggerSummon()
+        {
+            summonState.TriggerSummon();
+        }
+
+        private void FinishSummon()
+        {
+            summonState.FinishSummon();
+        }
 
         private void TriggerAttack()
         {

@@ -12,6 +12,7 @@ namespace DuyBui
         public KG_MoveState moveState { get; private set; }
         public KG_MeleeAttackState attackState { get; private set; }
         public KG_HealState healState { get; private set; }
+        public KG_SummonState summonState { get; private set; }
 
         #endregion
 
@@ -24,6 +25,8 @@ namespace DuyBui
         private D_MeleeAttackState meleeAttackStateData;
         [SerializeField]
         private D_HealState healStateData;
+        [SerializeField]
+        private D_SummonState summonStateData;
 
         #endregion
 
@@ -38,6 +41,7 @@ namespace DuyBui
             moveState = new KG_MoveState(this, stateMachine, "move", moveStateData, this);
             attackState = new KG_MeleeAttackState(this, stateMachine, "attack", meleeAttackPosition, meleeAttackStateData, this);
             healState = new KG_HealState(this, stateMachine, "heal", healStateData, this);
+            summonState = new KG_SummonState(this, stateMachine, "summom", summonStateData, this);
         }
 
         private void Start()

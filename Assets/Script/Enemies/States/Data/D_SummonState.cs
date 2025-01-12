@@ -8,8 +8,9 @@ namespace DuyBui
     public class D_SummonState : ScriptableObject
     {
         public int maxSummonCount = 6;
-        public int minSmmonCount = 4;
+        public int minSummonCount = 4;
         public List<GameObject> summonList;
         public float summonRadius = 1f;
+        public float summonInterval = 20f;
     }
 }

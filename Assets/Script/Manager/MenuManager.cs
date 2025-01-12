@@ -34,6 +34,7 @@ namespace DuyBui
         }
 
         private MenuState currentState;
+        public MenuState CurrentState { get => currentState; }
         public event Action<MenuState> OnMenuStateChanged;
 
 

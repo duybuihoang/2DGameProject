@@ -18,8 +18,6 @@ namespace DuyBui
         {
             if (collision.CompareTag("Player"))
             {
-                Debug.Log(CameraManager.Instance);
-                Debug.Log(coll);
                 CameraManager.Instance.SetCamPolygon(this.coll);
                 if (canSetActive)
                 {

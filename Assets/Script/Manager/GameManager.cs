@@ -21,6 +21,8 @@ namespace DuyBui
             {
                 AudioManager.Instance.PlayBGM("game-music-loop-7-145285");
             }
+
+            MenuManager.Instance.SetMenuState(MenuManager.MenuState.InGame);
         
         }
 

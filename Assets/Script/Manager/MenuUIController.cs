@@ -7,7 +7,7 @@ namespace DuyBui
 {
     public class MenuUIController : MonoBehaviour
     {
-        [SerializeField] private GameObject mainMenuPanel;
+        //[SerializeField] private GameObject mainMenuPanel;
         [SerializeField] private GameObject optionsPanel;
         //[SerializeField] private GameObject loadingPanel;
 
@@ -27,7 +27,7 @@ namespace DuyBui
 
         private void HandleMenuStateChanged(MenuState newState)
         {
-            mainMenuPanel?.SetActive(newState == MenuState.MainMenu);
+            //mainMenuPanel?.SetActive(newState == MenuState.MainMenu);
             optionsPanel?.SetActive(newState == MenuState.Options);
             //loadingPanel?.SetActive(newState == MenuState.Loading);
         }

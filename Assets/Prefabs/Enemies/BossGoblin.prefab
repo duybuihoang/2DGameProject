@@ -124,8 +124,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.01626563, y: 0.003657341}
-  m_Size: {x: 1.7337832, y: 1.9351182}
+  m_Offset: {x: 0.0052285194, y: 0.26606035}
+  m_Size: {x: 1.3950949, y: 2.4599242}
   m_Direction: 0
 --- !u!114 &4459676340574664214
 MonoBehaviour:
@@ -231,6 +231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 200
+  currentHealth: 0
 --- !u!1 &3298029591774874617
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,6 +434,7 @@ MonoBehaviour:
   idleStateData: {fileID: 11400000, guid: 0172af2f67f62fd4f87ddc1192ca315b, type: 2}
   moveStateData: {fileID: 11400000, guid: b347c3ca5c14deb46949cd93ddeb5cbe, type: 2}
   meleeAttackStateData: {fileID: 11400000, guid: aa404a4a2589365479ba994b14064209, type: 2}
+  healStateData: {fileID: 11400000, guid: 9daaf1b346c2d9e4f99d47180f27ae14, type: 2}
   meleeAttackPosition: {fileID: 6344679143855831513}
 --- !u!1 &4235743314900693017
 GameObject:

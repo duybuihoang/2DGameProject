@@ -7,7 +7,7 @@ namespace DuyBui.Enemies
     public class AnimationToStateMachine : MonoBehaviour
     {
         public AttackState attackState;
-
+        public HealState healState;
 
         private void TriggerAttack()
         {
@@ -17,6 +17,15 @@ namespace DuyBui.Enemies
         private void FinishAttack()
         {
             attackState.FinishAttack();
+        }
+        private void TriggerHeal()
+        {
+            healState.TriggerHeal();
+        }
+
+        private void FinishHeal()
+        {
+            healState.FinishHeal();
         }
 
     }

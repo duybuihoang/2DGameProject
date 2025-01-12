@@ -9,6 +9,8 @@ namespace DuyBui.Enemies
     {
         protected Movement Movement { get => movement ?? core.GetCoreComponent(ref movement); }
         private Movement movement;
+        protected Stats Stats { get => stats ?? core.GetCoreComponent(ref stats); }
+        private Stats stats;
 
         protected D_IdleState stateData;
 

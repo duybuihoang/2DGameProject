@@ -12,12 +12,18 @@ namespace DuyBui.CoreSystem
         private ParticleManager ParticleManager => particleManager ? particleManager : core.GetCoreComponent(ref particleManager);
         private ParticleManager particleManager;
 
+        private bool vulnerable = true;
+        public bool Vulnerable { get => vulnerable; set => vulnerable = value; }
 
 
         public void Damage(float amount)
         {
-            AudioManager.Instance.PlaySFX(SFX);
-            stats.Comp?.DecreaseHealth(amount);
+            if(vulnerable)
+            {
+                AudioManager.Instance.PlaySFX(SFX);
+                stats.Comp?.DecreaseHealth(amount);
+            }
+
         }
 
         public void EmitHitParticle(Vector3 selfPos, Vector3 targetPos)

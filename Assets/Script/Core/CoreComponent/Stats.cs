@@ -10,8 +10,8 @@ namespace DuyBui.CoreSystem
         public event Action OnHealthZero;
         public event Action<float> OnHealthChange;
 
-        [SerializeField] private float maxHealth;
-        private float currentHealth;
+        [SerializeField] public float maxHealth;
+        public float currentHealth;
 
         private Flash flash;
         private Flash Flash => flash ? flash : core.GetCoreComponent(ref flash);

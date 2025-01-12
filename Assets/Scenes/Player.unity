@@ -1128,6 +1128,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BossGoblin
       objectReference: {fileID: 0}
+    - target: {fileID: 3814136097494323880, guid: dd3606d2306eefb4e9b0f2d448720c17, type: 3}
+      propertyPath: healStateData
+      value: 
+      objectReference: {fileID: 11400000, guid: 9daaf1b346c2d9e4f99d47180f27ae14, type: 2}
     - target: {fileID: 4650734875246699275, guid: dd3606d2306eefb4e9b0f2d448720c17, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.55

@@ -27,6 +27,13 @@ namespace DuyBui.Enemies
             {
                 stateMachine.ChangeState(enemy.moveState);
             }
+            else
+            {
+                if (Stats.currentHealth < Stats.maxHealth)
+                {
+                    stateMachine.ChangeState(enemy.healState);
+                }
+            }
         }
     }
 }

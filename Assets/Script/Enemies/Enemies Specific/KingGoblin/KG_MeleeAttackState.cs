@@ -18,10 +18,7 @@ namespace DuyBui.Enemies
             base.LogicUpdate();
             if (isAnimationFinish)
             {
-                if (!isPlayerInAttackRange)
-                {
-                    stateMachine.ChangeState(enemy.idleState);
-                }
+                stateMachine.ChangeState(enemy.idleState); 
             }
         }
     }

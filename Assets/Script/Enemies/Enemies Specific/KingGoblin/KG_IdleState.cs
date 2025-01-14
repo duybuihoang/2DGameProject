@@ -22,10 +22,21 @@ namespace DuyBui.Enemies
         public override void LogicUpdate()
         {
             base.LogicUpdate();
-
-            if (isPlayerInDetectedRange)
+            if(Time.time >= summonTime +  enemy.summonState.stateData.summonInterval)
+            {
+                summonTime = Time.time;
+                stateMachine.ChangeState(enemy.summonState);
+            }    
+            else if (isPlayerInDetectedRange)
             {
                 stateMachine.ChangeState(enemy.moveState);
+            }
+            else
+            {
+                if (Stats.currentHealth < Stats.maxHealth)
+                {
+                    stateMachine.ChangeState(enemy.healState);
+                }
             }
         }
     }

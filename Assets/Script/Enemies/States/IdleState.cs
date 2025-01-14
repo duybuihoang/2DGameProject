@@ -9,6 +9,8 @@ namespace DuyBui.Enemies
     {
         protected Movement Movement { get => movement ?? core.GetCoreComponent(ref movement); }
         private Movement movement;
+        protected Stats Stats { get => stats ?? core.GetCoreComponent(ref stats); }
+        private Stats stats;
 
         protected D_IdleState stateData;
 
@@ -16,6 +18,8 @@ namespace DuyBui.Enemies
         protected bool isPlayerInDetectedRange;
 
         protected float idleTime;
+
+        protected float summonTime;
 
 
         public IdleState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, D_IdleState stateData) : base(entity, stateMachine, animBoolName)

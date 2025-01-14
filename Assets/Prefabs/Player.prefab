@@ -479,9 +479,25 @@ MonoBehaviour:
     m_ActionId: 542bf544-d8f5-4b49-99c5-6d127464c84e
     m_ActionName: Gameplay/Dash[/Keyboard/space]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 541858102081804765}
+        m_TargetAssemblyTypeName: PlayerInputHandler, Assembly-CSharp
+        m_MethodName: OnEscButtonInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: ad978812-cb59-4fbf-b1dd-1c042a27e1a7
     m_ActionName: Gameplay/Setting[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: afd9071b-b95a-4b8e-8dc5-49f4ac58cf52
+    m_ActionName: UI/New action
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Gameplay
@@ -501,6 +517,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attack: 0
   RollInput: 0
+  EscInput: 0
 --- !u!114 &1112221800109903452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -714,3 +731,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  currentHealth: 0

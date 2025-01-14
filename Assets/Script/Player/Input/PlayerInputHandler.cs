@@ -1,3 +1,4 @@
+using DuyBui;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -60,7 +61,22 @@ public class PlayerInputHandler : MonoBehaviour
     public void OnEscButtonInput(InputAction.CallbackContext context)
     {
         if (context.started)
-            EscInput = !EscInput;
+        {
+            Debug.Log("click");
+            if (MenuManager.Instance.CurrentState == MenuManager.MenuState.InGame)
+            {
+                MenuManager.Instance.SetMenuState(MenuManager.MenuState.Options);
+                Time.timeScale = 0f; 
+
+            }
+            else if(MenuManager.Instance.CurrentState == MenuManager.MenuState.Options)
+            {
+                MenuManager.Instance.SetMenuState(MenuManager.MenuState.InGame);
+                Time.timeScale = 1f; 
+
+            }
+
+        }
     }    
 
     public void UseRollInput() => RollInput = false;

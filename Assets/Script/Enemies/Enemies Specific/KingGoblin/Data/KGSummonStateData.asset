@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ccd6d098a0a84245b3cd25114300d50, type: 3}
+  m_Name: KGSummonStateData
+  m_EditorClassIdentifier: 
+  maxSummonCount: 6
+  minSummonCount: 4
+  summonList:
+  - {fileID: 3037213915155169980, guid: db698d8d53a65c541868627ab87546e0, type: 3}
+  - {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+  summonRadius: 13
+  summonInterval: 20

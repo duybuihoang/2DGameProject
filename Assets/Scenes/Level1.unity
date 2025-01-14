@@ -140,6 +140,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch_Red_Goblins (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
       value: 
@@ -200,6 +204,10 @@ PrefabInstance:
     - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: m_Name
       value: Torch_Red_Goblins (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
@@ -266,6 +274,10 @@ PrefabInstance:
     - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: m_Name
       value: Torch_Red_Goblins (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
@@ -585,6 +597,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TNT_Red_Goblins (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3037213915155169980, guid: db698d8d53a65c541868627ab87546e0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8233011292154855565, guid: db698d8d53a65c541868627ab87546e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 46.36
@@ -645,6 +661,10 @@ PrefabInstance:
     - target: {fileID: 3037213915155169980, guid: db698d8d53a65c541868627ab87546e0, type: 3}
       propertyPath: m_Name
       value: TNT_Red_Goblins (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3037213915155169980, guid: db698d8d53a65c541868627ab87546e0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8233011292154855565, guid: db698d8d53a65c541868627ab87546e0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -735,6 +755,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 8654428738651118996, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
   m_PrefabInstance: {fileID: 944874807}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &153396328 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3592293629356582602, guid: 96520357dec16914f95e409bd0340b7a, type: 3}
+  m_PrefabInstance: {fileID: 483354694}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &154378153
 PrefabInstance:
@@ -835,6 +860,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch_Red_Goblins (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
       value: 
@@ -905,6 +934,10 @@ PrefabInstance:
     - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: m_Name
       value: Torch_Red_Goblins (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
@@ -1082,6 +1115,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch_Red_Goblins (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
       value: 
@@ -1141,6 +1178,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8654428738651118996, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
   m_PrefabInstance: {fileID: 1223336656}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &355998658 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2247942145979792223, guid: 55280948c4dae2c488e02743121ff0eb, type: 3}
+  m_PrefabInstance: {fileID: 1473213492}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &359217538
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1152,6 +1194,10 @@ PrefabInstance:
     - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: m_Name
       value: Torch_Red_Goblins
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
@@ -1426,6 +1472,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TNT_Red_Goblins
       objectReference: {fileID: 0}
+    - target: {fileID: 3037213915155169980, guid: db698d8d53a65c541868627ab87546e0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8233011292154855565, guid: db698d8d53a65c541868627ab87546e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 36.2
@@ -1544,7 +1594,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 3123000406261309082, guid: 96520357dec16914f95e409bd0340b7a, type: 3}
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3592293629356582602, guid: 96520357dec16914f95e409bd0340b7a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 355998658}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96520357dec16914f95e409bd0340b7a, type: 3}
 --- !u!4 &504947690 stripped
@@ -1567,6 +1620,10 @@ PrefabInstance:
     - target: {fileID: 3037213915155169980, guid: db698d8d53a65c541868627ab87546e0, type: 3}
       propertyPath: m_Name
       value: TNT_Red_Goblins (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3037213915155169980, guid: db698d8d53a65c541868627ab87546e0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8233011292154855565, guid: db698d8d53a65c541868627ab87546e0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1625,6 +1682,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TNT_Red_Goblins
       objectReference: {fileID: 0}
+    - target: {fileID: 3037213915155169980, guid: db698d8d53a65c541868627ab87546e0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8233011292154855565, guid: db698d8d53a65c541868627ab87546e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 36.2
@@ -1681,6 +1742,10 @@ PrefabInstance:
     - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: m_Name
       value: Torch_Red_Goblins (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
@@ -1873,6 +1938,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch_Red_Goblins (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
       value: 
@@ -1934,6 +2003,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch_Red_Goblins (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
       value: 
@@ -1994,6 +2067,10 @@ PrefabInstance:
     - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: m_Name
       value: Torch_Red_Goblins (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
@@ -2166,6 +2243,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch_Red_Goblins
       objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
       value: 
@@ -2242,6 +2323,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch_Red_Goblins (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
       value: 
@@ -2302,6 +2387,10 @@ PrefabInstance:
     - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: m_Name
       value: Torch_Red_Goblins (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
@@ -2378,6 +2467,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TNT_Red_Goblins (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3037213915155169980, guid: db698d8d53a65c541868627ab87546e0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8233011292154855565, guid: db698d8d53a65c541868627ab87546e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 45.47
@@ -2434,6 +2527,10 @@ PrefabInstance:
     - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: m_Name
       value: Torch_Red_Goblins
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
@@ -3020,6 +3117,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TNT_Red_Goblins (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3037213915155169980, guid: db698d8d53a65c541868627ab87546e0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8233011292154855565, guid: db698d8d53a65c541868627ab87546e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 58.13
@@ -3081,6 +3182,10 @@ PrefabInstance:
     - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: m_Name
       value: Torch_Red_Goblins (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
@@ -3188,6 +3293,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch_Red_Goblins (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
       value: 
@@ -3253,6 +3362,10 @@ PrefabInstance:
     - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: m_Name
       value: Torch_Red_Goblins (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
@@ -3320,6 +3433,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch_Red_Goblins (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
       value: 
@@ -3380,6 +3497,10 @@ PrefabInstance:
     - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: m_Name
       value: Torch_Red_Goblins (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
@@ -3451,6 +3572,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TNT_Red_Goblins (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3037213915155169980, guid: db698d8d53a65c541868627ab87546e0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8233011292154855565, guid: db698d8d53a65c541868627ab87546e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 49.82
@@ -3513,6 +3638,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch_Red_Goblins
       objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
       value: 
@@ -3574,6 +3703,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch_Red_Goblins (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
       value: 
@@ -3634,6 +3767,10 @@ PrefabInstance:
     - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: m_Name
       value: Torch_Red_Goblins (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
@@ -36221,6 +36358,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch_Red_Goblins (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
       value: 
@@ -36281,6 +36422,10 @@ PrefabInstance:
     - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: m_Name
       value: Torch_Red_Goblins (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
@@ -36358,6 +36503,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch_Red_Goblins
       objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
       value: 
@@ -36423,6 +36572,10 @@ PrefabInstance:
     - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: m_Name
       value: Torch_Red_Goblins (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
@@ -36500,6 +36653,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch_Red_Goblins (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
       value: 
@@ -36560,6 +36717,10 @@ PrefabInstance:
     - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: m_Name
       value: Torch_Red_Goblins (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
@@ -36622,6 +36783,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch_Red_Goblins (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
       value: 
@@ -36682,6 +36847,10 @@ PrefabInstance:
     - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: m_Name
       value: Torch_Red_Goblins (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
@@ -36748,6 +36917,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TNT_Red_Goblins
       objectReference: {fileID: 0}
+    - target: {fileID: 3037213915155169980, guid: db698d8d53a65c541868627ab87546e0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8233011292154855565, guid: db698d8d53a65c541868627ab87546e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 36.2
@@ -36810,6 +36983,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch_Red_Goblins (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
       value: 
@@ -36871,6 +37048,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch_Red_Goblins (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
       value: 
@@ -36931,6 +37112,10 @@ PrefabInstance:
     - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: m_Name
       value: Torch_Red_Goblins (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
@@ -37107,6 +37292,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TNT_Red_Goblins (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3037213915155169980, guid: db698d8d53a65c541868627ab87546e0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8233011292154855565, guid: db698d8d53a65c541868627ab87546e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 29.6
@@ -37163,6 +37352,10 @@ PrefabInstance:
     - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: m_Name
       value: Torch_Red_Goblins (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
@@ -37230,6 +37423,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch_Red_Goblins (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
       value: 
@@ -37295,6 +37492,10 @@ PrefabInstance:
     - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: m_Name
       value: Torch_Red_Goblins (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
@@ -37367,6 +37568,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch_Red_Goblins (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
       value: 
@@ -37432,6 +37637,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TNT_Red_Goblins
       objectReference: {fileID: 0}
+    - target: {fileID: 3037213915155169980, guid: db698d8d53a65c541868627ab87546e0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8233011292154855565, guid: db698d8d53a65c541868627ab87546e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 36.2
@@ -37488,6 +37697,10 @@ PrefabInstance:
     - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: m_Name
       value: Torch_Red_Goblins (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
@@ -37676,6 +37889,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch_Red_Goblins (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
       value: 
@@ -37742,6 +37959,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BossGoblin
       objectReference: {fileID: 0}
+    - target: {fileID: 3414312439511917716, guid: dd3606d2306eefb4e9b0f2d448720c17, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4650734875246699275, guid: dd3606d2306eefb4e9b0f2d448720c17, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.640003
@@ -37798,6 +38019,10 @@ PrefabInstance:
     - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: m_Name
       value: Torch_Red_Goblins (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
@@ -37942,6 +38167,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch_Red_Goblins (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
       value: 
@@ -38002,6 +38231,10 @@ PrefabInstance:
     - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: m_Name
       value: Torch_Red_Goblins (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
@@ -38090,6 +38323,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch_Red_Goblins (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
       value: 
@@ -38144,6 +38381,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8654428738651118996, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
   m_PrefabInstance: {fileID: 1865161550}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1473213492
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 153396328}
+    m_Modifications:
+    - target: {fileID: 537058287560766188, guid: 55280948c4dae2c488e02743121ff0eb, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 2247942145979792223, guid: 55280948c4dae2c488e02743121ff0eb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2247942145979792223, guid: 55280948c4dae2c488e02743121ff0eb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2247942145979792223, guid: 55280948c4dae2c488e02743121ff0eb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2247942145979792223, guid: 55280948c4dae2c488e02743121ff0eb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2247942145979792223, guid: 55280948c4dae2c488e02743121ff0eb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2247942145979792223, guid: 55280948c4dae2c488e02743121ff0eb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2247942145979792223, guid: 55280948c4dae2c488e02743121ff0eb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2247942145979792223, guid: 55280948c4dae2c488e02743121ff0eb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2247942145979792223, guid: 55280948c4dae2c488e02743121ff0eb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2247942145979792223, guid: 55280948c4dae2c488e02743121ff0eb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 55280948c4dae2c488e02743121ff0eb, type: 3}
 --- !u!4 &1484184919 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8654428738651118996, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
@@ -38170,6 +38464,10 @@ PrefabInstance:
     - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: m_Name
       value: Torch_Red_Goblins (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
@@ -40338,6 +40636,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch_Red_Goblins (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
       value: 
@@ -40407,6 +40709,10 @@ PrefabInstance:
     - target: {fileID: 3037213915155169980, guid: db698d8d53a65c541868627ab87546e0, type: 3}
       propertyPath: m_Name
       value: TNT_Red_Goblins
+      objectReference: {fileID: 0}
+    - target: {fileID: 3037213915155169980, guid: db698d8d53a65c541868627ab87546e0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8233011292154855565, guid: db698d8d53a65c541868627ab87546e0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -40510,6 +40816,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch_Red_Goblins (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
       value: 
@@ -40574,6 +40884,10 @@ PrefabInstance:
     - target: {fileID: 3037213915155169980, guid: db698d8d53a65c541868627ab87546e0, type: 3}
       propertyPath: m_Name
       value: TNT_Red_Goblins (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3037213915155169980, guid: db698d8d53a65c541868627ab87546e0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8233011292154855565, guid: db698d8d53a65c541868627ab87546e0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -40651,6 +40965,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TNT_Red_Goblins
       objectReference: {fileID: 0}
+    - target: {fileID: 3037213915155169980, guid: db698d8d53a65c541868627ab87546e0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8233011292154855565, guid: db698d8d53a65c541868627ab87546e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 36.2
@@ -40712,6 +41030,10 @@ PrefabInstance:
     - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: m_Name
       value: Torch_Red_Goblins (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
@@ -128722,6 +129044,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch_Red_Goblins (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
       value: 
@@ -128828,6 +129154,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch_Red_Goblins (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
       value: 
@@ -128888,6 +129218,10 @@ PrefabInstance:
     - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: m_Name
       value: Torch_Red_Goblins (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
@@ -128960,6 +129294,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch_Red_Goblins (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
       value: 
@@ -129024,6 +129362,10 @@ PrefabInstance:
     - target: {fileID: 3037213915155169980, guid: db698d8d53a65c541868627ab87546e0, type: 3}
       propertyPath: m_Name
       value: TNT_Red_Goblins (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3037213915155169980, guid: db698d8d53a65c541868627ab87546e0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8233011292154855565, guid: db698d8d53a65c541868627ab87546e0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -129106,6 +129448,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TNT_Red_Goblins (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3037213915155169980, guid: db698d8d53a65c541868627ab87546e0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8233011292154855565, guid: db698d8d53a65c541868627ab87546e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 49.4
@@ -129173,6 +129519,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch_Red_Goblins (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
       value: 
@@ -129233,6 +129583,10 @@ PrefabInstance:
     - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: m_Name
       value: Torch_Red_Goblins
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8654428738651118996, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -129295,6 +129649,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TNT_Red_Goblins (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3037213915155169980, guid: db698d8d53a65c541868627ab87546e0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8233011292154855565, guid: db698d8d53a65c541868627ab87546e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 29.6
@@ -129351,6 +129709,10 @@ PrefabInstance:
     - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: m_Name
       value: Torch_Red_Goblins (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
@@ -129422,6 +129784,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TNT_Red_Goblins
       objectReference: {fileID: 0}
+    - target: {fileID: 3037213915155169980, guid: db698d8d53a65c541868627ab87546e0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8233011292154855565, guid: db698d8d53a65c541868627ab87546e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 30.65
@@ -129488,6 +129854,10 @@ PrefabInstance:
     - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: m_Name
       value: Torch_Red_Goblins (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck
@@ -129636,6 +130006,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TNT_Red_Goblins (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3037213915155169980, guid: db698d8d53a65c541868627ab87546e0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8233011292154855565, guid: db698d8d53a65c541868627ab87546e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 29.6
@@ -129696,6 +130070,10 @@ PrefabInstance:
     - target: {fileID: 3037213915155169980, guid: db698d8d53a65c541868627ab87546e0, type: 3}
       propertyPath: m_Name
       value: TNT_Red_Goblins (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3037213915155169980, guid: db698d8d53a65c541868627ab87546e0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8233011292154855565, guid: db698d8d53a65c541868627ab87546e0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -129798,6 +130176,10 @@ PrefabInstance:
     - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: m_Name
       value: Torch_Red_Goblins
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749182830512833019, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3784554724372071959, guid: 77621d94add0ea84c97b8a41806d4e8b, type: 3}
       propertyPath: attackCheck

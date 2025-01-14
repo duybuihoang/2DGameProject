@@ -27,12 +27,12 @@ namespace DuyBui
 
         void OnSliderSFXValueChanged(float value)
         {
-            AudioManager.Instance.sfxSource.volume = value;
+            AudioManager.Instance.SetSFXVolume(value);
         }
 
         void OnSliderBGMValueChanged(float value)
         {
-            AudioManager.Instance.bgmSource.volume = value;
+            AudioManager.Instance.SetBGMVolume(value);
 
         }
 

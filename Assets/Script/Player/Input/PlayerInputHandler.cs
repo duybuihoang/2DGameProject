@@ -62,7 +62,7 @@ public class PlayerInputHandler : MonoBehaviour
     {
         if (context.started)
         {
-            Debug.Log("click");
+            Debug.Log("click: " + MenuManager.Instance.CurrentState);
             if (MenuManager.Instance.CurrentState == MenuManager.MenuState.InGame)
             {
                 MenuManager.Instance.SetMenuState(MenuManager.MenuState.Options);

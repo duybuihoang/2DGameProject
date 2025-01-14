@@ -38,10 +38,7 @@ namespace DuyBui
         }
         private void OnDestroy()
         {
-            if (AudioManager.Instance)
-            {
-                //AudioManager.Instance.StopBGM();
-            }
+
         }
     }
 }

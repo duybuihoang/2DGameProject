@@ -20,9 +20,9 @@ namespace DuyBui.Weapon.Components
             base.Awake();
         }
 
-        protected override void Start()
+        protected override void OnEnable()
         {
-            base.Start();
+            base.OnEnable();
             Debug.Log("actionHitBox Start");
             movement = new CoreComp<CoreSystem.Movement>(Core);
             evenHandler.OnAttackAction += HandleAttackAction;

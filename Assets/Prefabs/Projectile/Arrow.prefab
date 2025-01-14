@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
-  speed: 10
+  speed: 30
   damageRadius: 0.23
   damagePosition: {fileID: 1368810247099226411}
   whatIsGround:

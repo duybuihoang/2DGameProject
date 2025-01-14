@@ -59,9 +59,7 @@ public class Shootable : Projectile
     public override void Fire(Vector3 start, Vector3 dest, float damage)
     {
         base.Fire(start, dest, damage);
-        Debug.Log((dest - start).normalized);
-        Debug.Log((dest - start).normalized * speed);
-        rb.velocity = (dest - start).normalized * speed;
+        rb.velocity = (Vector2) (dest - start).normalized * speed;
 
 
         var rotate = Mathf.Atan2(dest.y - start.y, dest.x - start.x) * Mathf.Rad2Deg;

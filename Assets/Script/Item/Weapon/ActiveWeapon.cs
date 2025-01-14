@@ -29,7 +29,7 @@ namespace DuyBui
                 currentItem.GetComponent<Item>().GetCore();
             }
 
-            Debug.Log(currentItem);
+            Debug.Log(currentItem); 
         }
     }
 }

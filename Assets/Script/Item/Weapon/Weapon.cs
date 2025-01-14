@@ -46,7 +46,9 @@ namespace DuyBui.Weapon.Components
         protected override void Enter()
         {
             base.Enter();
-          
+            Debug.Log("enter");
+
+            isDoingAction = true;
             anim.SetBool("active", true);
             anim.SetInteger("counter", CurrentAttackCounter);
 
@@ -56,7 +58,7 @@ namespace DuyBui.Weapon.Components
 
             //TriggerSlashEffect();
             AudioManager.Instance.PlaySFX(Data.SFX);
-            
+
         }
 
         public void SetData(WeaponDataSO data)
@@ -67,11 +69,13 @@ namespace DuyBui.Weapon.Components
         protected override void Exit()
         {
             //print($"{transform.name} exit");
+            Debug.Log("End: " + Time.time);
+            isDoingAction = false;
 
-            anim.SetBool("active", false);
+            anim.SetBool("active", isDoingAction);
             CurrentAttackCounter++;
             onExit?.Invoke();
-
+            
             //isAttacking = false;
         }
 
@@ -90,13 +94,14 @@ namespace DuyBui.Weapon.Components
 
         protected override void Update()
         {
+            //Debug.Log("input handler" + inputHandler.attack);
             //attackCounterResetTimer.Tick();
             if(!isDoingAction)
             {
                 MouseFollowWithOffset();
             }    
             
-            if(inputHandler.attack)
+            if(inputHandler.attack && !isDoingAction)
             {
                 Enter();
             }
@@ -111,6 +116,7 @@ namespace DuyBui.Weapon.Components
         protected override void OnEnable()
         {
             EventHandler.OnFinish += Exit;
+
         }
 
         protected override void OnDisable()

@@ -23,9 +23,9 @@ namespace DuyBui.Weapon.Components
         }
 
 
-        protected override void Start()
+        protected override void OnEnable()
         {
-            base.Start();
+            base.OnEnable();
 
             evenHandler.OnStartMovement += HandleStartMovement;
             evenHandler.OnStopMovement += HandleStopMovement;

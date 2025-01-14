@@ -17,7 +17,7 @@ MonoBehaviour:
   itemType: 0
   maxStackSize: 1
   ItemObj: {fileID: 8730038507365634675, guid: bce11f2b35032534086194ab03254995, type: 3}
-  SFX: 
+  SFX: bow-and-arrow-shoot-sound-effect-2-239699
   <NumberOfAttacks>k__BackingField: 1
   <SlashEffect>k__BackingField: {fileID: 0}
   <ComponentData>k__BackingField:
@@ -33,3 +33,4 @@ MonoBehaviour:
         - name: 
           <Projectile>k__BackingField: {fileID: 3054761769790817874, guid: 951c318661fd4ca4eb71f1c5b4189ad7, type: 3}
         <damage>k__BackingField: 10
+        <ShootInterval>k__BackingField: 0.5

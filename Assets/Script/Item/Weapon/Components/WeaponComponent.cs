@@ -22,7 +22,7 @@ namespace DuyBui.Weapon.Components
             evenHandler = GetComponentInChildren<AnimationEventHandler>();
         }
 
-        protected virtual void Start()
+        protected virtual void OnEnable()
         {
             weapon.onEnter += HandleEnter;
             weapon.onExit += HandleExit;

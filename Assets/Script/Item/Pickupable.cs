@@ -19,7 +19,8 @@ namespace DuyBui
 
         private void Start()
         {
-            icon.sprite = data.icon;
+            icon.sprite = data?.icon;
+
             if(data.itemType == ItemType.Consumable)
             {
                 transform.localScale = new Vector3(3f, 3f, 3f);
@@ -29,7 +30,7 @@ namespace DuyBui
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            if (collision.CompareTag("Player"))
+            if (collision.CompareTag("Player") && data != null)
             {
                 if(InventoryUI.Instance.AddItem(data))
                 {
@@ -37,6 +38,12 @@ namespace DuyBui
                 }
             }
                 
+        }
+
+        public void SetData(ItemSO data)
+        {
+            this.data = data;
+            icon.sprite = data.icon;
         }
 
     }

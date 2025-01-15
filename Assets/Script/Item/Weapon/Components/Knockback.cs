@@ -22,9 +22,9 @@ namespace DuyBui.Weapon.Components
             }
         }
 
-        protected override void OnEnable()
+        protected override void Start()
         {
-            base.OnEnable();
+            base.Start();
 
             hitBox = GetComponent<ActionHitBox>();
             hitBox.OnDetectedCollider2D += HandleDetectedCollider;

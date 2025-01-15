@@ -35,9 +35,9 @@ namespace DuyBui.Weapon.Components
             evenHandler.OnAttackAction -= EmitProjectile;
         }
 
-        protected override void OnEnable()
+        protected override void Start()
         {
-            base.OnEnable();
+            base.Start();
             startTime = Time.time;
             evenHandler.OnAttackAction += EmitProjectile;
         }

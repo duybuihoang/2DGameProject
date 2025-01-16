@@ -69,7 +69,6 @@ namespace DuyBui.Weapon.Components
         protected override void Exit()
         {
             //print($"{transform.name} exit");
-            Debug.Log("End: " + Time.time);
             isDoingAction = false;
 
             anim.SetBool("active", isDoingAction);

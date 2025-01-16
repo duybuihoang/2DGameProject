@@ -70,8 +70,15 @@ namespace DuyBui.Enemies
         }
         public virtual bool CheckPlayerInAttackRangeAction()
         {
+            Debug.Log(entityData.TriggerAttackActionRadius * transform.localScale.magnitude);
+            Debug.Log(entityData.TriggerAttackActionRadius + " " + transform.localScale.magnitude);
             return Physics2D.OverlapCircle(attackCheck.position, entityData.TriggerAttackActionRadius * transform.localScale.magnitude, entityData.whatIsPlayer);
         }
+
+/*        public virtual bool CheckPlayerInRangedAttackRangeAction()
+        {
+            return Physics2D.OverlapCircle(attackCheck.position, entityData.TriggerRangedAttackActionRadius * transform.localScale.magnitude, entityData.whatIsPlayer);
+        }*/
         public virtual Collider2D GetPlayerInDetectedRange()
         {
             return Physics2D.OverlapCircle(playerCheck.position, entityData.detectRadius * transform.localScale.magnitude, entityData.whatIsPlayer) ;

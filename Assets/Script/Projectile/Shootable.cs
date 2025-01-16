@@ -28,8 +28,9 @@ public class Shootable : Projectile
     }
 
 
-    private void FixedUpdate()
+    protected override void FixedUpdate()   
     {
+        base.FixedUpdate();
         if(!hasHitWall)
         {
             Collider2D damageHit = Physics2D.OverlapCircle(damagePosition.position,damageRadius, whatIsTarget);
@@ -54,6 +55,11 @@ public class Shootable : Projectile
             }
 
         }    
+
+        if(CheckMaxRange())
+        {
+            Destroy(gameObject);
+        }
     }
 
     public override void Fire(Vector3 start, Vector3 dest, float damage)
@@ -68,6 +74,7 @@ public class Shootable : Projectile
 
     protected override void Start()
     {
+        base.Start();
         rb = GetComponent<Rigidbody2D>();
     }
     private void OnDrawGizmos()

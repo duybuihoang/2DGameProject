@@ -23,7 +23,7 @@ namespace DuyBui.Enemies
             base.LogicUpdate();
             if (isPlayerInDetectedRange)
             {
-                stateMachine.ChangeState(enemy.moveState);
+                //stateMachine.ChangeState(enemy.moveState);
             }
         }
     }

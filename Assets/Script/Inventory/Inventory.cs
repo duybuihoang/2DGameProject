@@ -1,13 +1,32 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace DuyBui
 {
-    public class Inventory : Singleton<Inventory>
+    public class Inventory : MonoBehaviour
     {
+        public static Inventory Instance { get => instance; }
+        private static Inventory instance;
+
         public ItemSO[] slots = new ItemSO[9];
         public int[] quantities = new int[9];
+
+        private void Awake()
+        {
+
+            if (instance != null && instance != this)
+            {
+                Destroy(gameObject);
+                return;
+            }
+
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+
+        }
 
         public bool TryAddItem(ItemSO item, int quantity)
         {
@@ -40,6 +59,10 @@ namespace DuyBui
                     quantities[slot] = 0;
                 }
             }
+        }
+        public void ClearInventory()
+        {
+            Array.Clear(slots, 0, 9);
         }
 
         public ItemSO GetItem(int slot)

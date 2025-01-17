@@ -26,6 +26,8 @@ namespace DuyBui
             Debug.Log(SceneManager.GetActiveScene().name == "Menu");
             if(SceneManager.GetActiveScene().name != "Menu")
             {
+                GameManager.Instance.Save();
+
                 SceneManager.LoadScene("Menu");
             }
             else

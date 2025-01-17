@@ -12,7 +12,9 @@ namespace DuyBui
         {
             //TODO: LOAD GAME
             Debug.Log("Loading saved game...");
-            SceneManager.LoadScene(GameManager.Instance.LoadLevel());
+
+            string name = GameManager.Instance.LoadGame();
+            SceneManager.LoadScene(name);
         }
     }
 }

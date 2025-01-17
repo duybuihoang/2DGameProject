@@ -1587,6 +1587,26 @@ PrefabInstance:
       propertyPath: cameraObject
       value: 
       objectReference: {fileID: 1405009259}
+    - target: {fileID: 5631243365874736862, guid: 96520357dec16914f95e409bd0340b7a, type: 3}
+      propertyPath: slots.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 922957c075dd4204e8ed7655c8a9602f, type: 2}
+    - target: {fileID: 5631243365874736862, guid: 96520357dec16914f95e409bd0340b7a, type: 3}
+      propertyPath: slots.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 594445702bf67d449be6bc73e239e2da, type: 2}
+    - target: {fileID: 5631243365874736862, guid: 96520357dec16914f95e409bd0340b7a, type: 3}
+      propertyPath: slots.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631243365874736862, guid: 96520357dec16914f95e409bd0340b7a, type: 3}
+      propertyPath: slots.Array.data[3]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631243365874736862, guid: 96520357dec16914f95e409bd0340b7a, type: 3}
+      propertyPath: quantities.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754757467368009729, guid: 96520357dec16914f95e409bd0340b7a, type: 3}
       propertyPath: m_Name
       value: =====MANAGER=====
@@ -1594,6 +1614,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 3123000406261309082, guid: 96520357dec16914f95e409bd0340b7a, type: 3}
+    - {fileID: 8111959300093508457, guid: 96520357dec16914f95e409bd0340b7a, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 3592293629356582602, guid: 96520357dec16914f95e409bd0340b7a, type: 3}
       insertIndex: -1

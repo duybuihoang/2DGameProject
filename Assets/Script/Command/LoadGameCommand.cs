@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using static DuyBui.MenuManager;
 
 namespace DuyBui
 {
@@ -10,7 +12,7 @@ namespace DuyBui
         {
             //TODO: LOAD GAME
             Debug.Log("Loading saved game...");
-
+            SceneManager.LoadScene(GameManager.Instance.LoadLevel());
         }
     }
 }

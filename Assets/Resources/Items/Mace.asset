@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a61a0e1c7adb4c41b48181eada6d25d, type: 3}
-  m_Name: Hammer
+  m_Name: Mace
   m_EditorClassIdentifier: 
   itemName: Mace
   icon: {fileID: -292003807, guid: a9fd60abb988fe348b47c97edcb69af6, type: 3}

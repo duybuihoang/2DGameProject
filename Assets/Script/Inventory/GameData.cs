@@ -11,11 +11,14 @@ namespace DuyBui
 
         public SerializableInventory inventory;
         public int currentLevel;
+        public Dictionary<string, bool> levelCompletion;
+        public Vector3 playerPosition;
 
         public GameData(Inventory inventory, int level)
         {
             this.inventory = new SerializableInventory(inventory);
             this.currentLevel = level;
+
         }
     }
 }

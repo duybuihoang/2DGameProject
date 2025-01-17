@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f22ba1616bd13d246a3cc9b90c36f265, type: 3}
   m_Name: EWMeleeAttackStateData
   m_EditorClassIdentifier: 
-  attackRadius: 0.8
+  attackRadius: 5
   attackDamage: 10
   SFX: 
   knockbackStrength: 10
   whatIsPlayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024

@@ -1,21 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
-namespace DuyBui
+namespace DuyBui.Enemies
 {
-    public class EW_MeleeAttackState : MonoBehaviour
+    public class EW_MeleeAttackState : MeleeAttackState
     {
-        // Start is called before the first frame update
-        void Start()
+        private EvilWizard enemy;
+        public EW_MeleeAttackState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, Transform attackPosition, D_MeleeAttackState stateData, EvilWizard enemy) : base(entity, stateMachine, animBoolName, attackPosition, stateData)
         {
-        
+            this.enemy = enemy;
         }
-
-        // Update is called once per frame
-        void Update()
+        public override void LogicUpdate()
         {
-        
+            base.LogicUpdate();
+            if (isAnimationFinish)
+            {
+                if (!isPlayerInAttackRange)
+                {
+                    stateMachine.ChangeState(enemy.idleState);
+                }
+            }
         }
     }
 }

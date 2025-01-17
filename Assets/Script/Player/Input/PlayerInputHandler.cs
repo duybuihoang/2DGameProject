@@ -66,14 +66,11 @@ public class PlayerInputHandler : MonoBehaviour
             if (MenuManager.Instance.CurrentState == MenuManager.MenuState.InGame)
             {
                 MenuManager.Instance.SetMenuState(MenuManager.MenuState.Options);
-                Time.timeScale = 0f; 
 
             }
             else if(MenuManager.Instance.CurrentState == MenuManager.MenuState.Options)
             {
                 MenuManager.Instance.SetMenuState(MenuManager.MenuState.InGame);
-                Time.timeScale = 1f; 
-
             }
 
         }

@@ -10,7 +10,8 @@ namespace DuyBui
     {
         public void Execute()
         {
-            MenuManager.Instance.SetMenuState(MenuState.Loading);
+            MenuManager.Instance.SetMenuState(MenuState.InGame);
+            Debug.Log(MenuManager.Instance.CurrentState);
             SceneManager.LoadScene("Level1");
         }
     }

@@ -8,7 +8,14 @@ namespace DuyBui
     {
         public void onclick()
         {
-            MenuManager.Instance.SetMenuState(MenuManager.MenuState.InGame);
+            if (MenuManager.Instance.CurrentState == MenuManager.MenuState.Options)
+            {
+                MenuManager.Instance.SetMenuState(MenuManager.MenuState.MainMenu);
+            }
+            else
+            {
+                MenuManager.Instance.SetMenuState(MenuManager.MenuState.InGame);
+            }
         }
     }
 }

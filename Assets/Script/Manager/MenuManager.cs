@@ -48,11 +48,23 @@ namespace DuyBui
 
             instance = this;
             DontDestroyOnLoad(gameObject);
+           
         }
 
 
         public void SetMenuState(MenuState newState)
         {
+            if(currentState == MenuState.Options)
+            {
+                Time.timeScale = 1f;
+            }
+            else if(newState == MenuState.Options)
+            {
+                Time.timeScale = 0f;
+
+            }
+
+
             currentState = newState;
             OnMenuStateChanged?.Invoke(currentState);
         }

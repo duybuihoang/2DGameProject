@@ -16,7 +16,6 @@ namespace DuyBui
         {
             MenuManager.Instance.OnMenuStateChanged += HandleMenuStateChanged;
             AudioManager.Instance.PlayBGM("game-music-loop-6-144641");
-            MenuManager.Instance.SetMenuState(MenuState.MainMenu);
         }
 
         private void OnDestroy()

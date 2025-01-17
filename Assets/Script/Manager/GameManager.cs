@@ -36,9 +36,5 @@ namespace DuyBui
 
 
         }
-        private void OnDestroy()
-        {
-
-        }
     }
 }

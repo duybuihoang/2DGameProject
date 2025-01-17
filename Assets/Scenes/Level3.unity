@@ -1755,6 +1755,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5609176647093617140, guid: 27ae3aa661a5a6f49ab14665976ee971, type: 3}
   m_PrefabInstance: {fileID: 2050823691}
   m_PrefabAsset: {fileID: 0}
+--- !u!20 &571644911 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 2574979990880296877, guid: ec045597478ace84197d5b3cadef1eb0, type: 3}
+  m_PrefabInstance: {fileID: 2123539106}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &587012317
 GameObject:
   m_ObjectHideFlags: 0
@@ -40153,7 +40158,7 @@ PrefabInstance:
     - target: {fileID: 1825991160423167132, guid: 27ae3aa661a5a6f49ab14665976ee971, type: 3}
       propertyPath: m_Camera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 571644911}
     - target: {fileID: 2441503075622943629, guid: 27ae3aa661a5a6f49ab14665976ee971, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

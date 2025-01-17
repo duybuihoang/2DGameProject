@@ -117,6 +117,9 @@ namespace DuyBui
         public void Save()
         {
             Debug.Log(Inventory.Instance);
+            currentSceneName = SceneManager.GetActiveScene().name;
+            currentLevel = dict[currentSceneName];
+
             GameData gameData = new GameData(Inventory.Instance, currentLevel);
             SaveSystem.SaveGame(gameData);
         }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace DuyBui
 {
@@ -32,9 +33,19 @@ namespace DuyBui
         {
             if (collision.CompareTag("Player") && data != null)
             {
+              
                 if(InventoryUI.Instance.AddItem(data))
                 {
                     Destroy(gameObject);
+                }
+
+                if (data.itemName == "Bow")
+                {
+                    SceneManager.LoadScene("Level2");
+                }
+                else if(data.itemName == "Mace")
+                {
+                    SceneManager.LoadScene("Level3");
                 }
             }
                 

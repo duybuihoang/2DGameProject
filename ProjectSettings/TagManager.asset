@@ -8,6 +8,7 @@ TagManager:
   - ParticleContainer
   - Confiner
   - Camera
+  - EvilWizard
   layers:
   - Default
   - TransparentFX

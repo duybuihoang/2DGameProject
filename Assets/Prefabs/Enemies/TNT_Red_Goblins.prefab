@@ -170,7 +170,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8233011292154855565
 Transform:
   m_ObjectHideFlags: 0
@@ -367,6 +367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 20
+  currentHealth: 0
 --- !u!1 &4715412014247403088
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,6 +445,57 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathParticles: {fileID: 6094213045938503887, guid: 8457203f54be5ca4394eb7f1d3da1e45, type: 3}
   deathSFX: Block Break 1
+--- !u!1 &7229096900063014965
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3272410097536431819}
+  - component: {fileID: 4387682754650767878}
+  m_Layer: 8
+  m_Name: DropItem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3272410097536431819
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7229096900063014965}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3027375134493603160}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4387682754650767878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7229096900063014965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49a1c5a5676f4a54a8a394436d5d08da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemList:
+  - {fileID: 11400000, guid: 594445702bf67d449be6bc73e239e2da, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  pickupPrefabs: {fileID: 5298195516201118446, guid: 398ae64a35828704881420ed5ef5bf1e, type: 3}
 --- !u!1 &7332224149345216083
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,6 +533,7 @@ Transform:
   - {fileID: 4743784767483367669}
   - {fileID: 4253009877403186222}
   - {fileID: 663033196391736015}
+  - {fileID: 3272410097536431819}
   m_Father: {fileID: 8233011292154855565}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5341695346732062004

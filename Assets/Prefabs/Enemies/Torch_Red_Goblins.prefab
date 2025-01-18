@@ -255,11 +255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemList:
-  - {fileID: 11400000, guid: 8c00122fe4f2c2040a43da330b07626b, type: 2}
   - {fileID: 11400000, guid: 594445702bf67d449be6bc73e239e2da, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   pickupPrefabs: {fileID: 5298195516201118446, guid: 398ae64a35828704881420ed5ef5bf1e, type: 3}
@@ -315,7 +311,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8654428738651118996
 Transform:
   m_ObjectHideFlags: 0

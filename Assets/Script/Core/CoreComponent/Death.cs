@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace DuyBui.CoreSystem
 {
@@ -21,6 +22,12 @@ namespace DuyBui.CoreSystem
             ParticleManager?.StartParticles(deathParticles);
             core.transform.parent.gameObject.SetActive(false);
             DropItem?.Drop(transform.position);
+
+
+            if (core.transform.parent.tag == "Player" || core.transform.parent.tag == "EvilWizard")
+            {
+                SceneManager.LoadScene("Menu");
+            }
         }
         private void OnEnable()
         {

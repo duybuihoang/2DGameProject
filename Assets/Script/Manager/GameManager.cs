@@ -48,6 +48,9 @@ namespace DuyBui
 
             SceneManager.activeSceneChanged += OnActiveSceneChanged;
 
+            if(currentSceneName.Contains("Level"))
+                MenuManager.Instance.SetMenuState(MenuManager.MenuState.InGame);
+
         }
         // Start is called before the first frame update
         private void InitLevel()
@@ -118,7 +121,10 @@ namespace DuyBui
         {
             Debug.Log(Inventory.Instance);
             currentSceneName = SceneManager.GetActiveScene().name;
-            currentLevel = dict[currentSceneName];
+            if(currentSceneName.Contains("Level"))
+            {
+                currentLevel = dict[currentSceneName];
+            }
 
             GameData gameData = new GameData(Inventory.Instance, currentLevel);
             SaveSystem.SaveGame(gameData);

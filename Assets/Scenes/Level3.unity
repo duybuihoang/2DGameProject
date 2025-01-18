@@ -46488,10 +46488,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DarkWizard
       objectReference: {fileID: 0}
-    - target: {fileID: 4694167759002033417, guid: 45930d20c83084e4e99a20d04ae1215c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -77239,6 +77235,10 @@ PrefabInstance:
       propertyPath: cameraObject
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5631243365874736862, guid: 96520357dec16914f95e409bd0340b7a, type: 3}
+      propertyPath: quantities.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5754757467368009729, guid: 96520357dec16914f95e409bd0340b7a, type: 3}
       propertyPath: m_Name
       value: =====MANAGER=====
@@ -77737,11 +77737,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6427310683552048718, guid: 11d000d4b2da91948825b0c033ae04af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.9
+      value: -139
       objectReference: {fileID: 0}
     - target: {fileID: 6427310683552048718, guid: 11d000d4b2da91948825b0c033ae04af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 58.7
+      value: 53.6
       objectReference: {fileID: 0}
     - target: {fileID: 6427310683552048718, guid: 11d000d4b2da91948825b0c033ae04af, type: 3}
       propertyPath: m_LocalPosition.z
@@ -78695,11 +78695,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 407358494188448078, guid: ec045597478ace84197d5b3cadef1eb0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.9
+      value: -139
       objectReference: {fileID: 0}
     - target: {fileID: 407358494188448078, guid: ec045597478ace84197d5b3cadef1eb0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 58.7
+      value: 53.6
       objectReference: {fileID: 0}
     - target: {fileID: 2931348495520779968, guid: ec045597478ace84197d5b3cadef1eb0, type: 3}
       propertyPath: m_Name
@@ -78751,11 +78751,11 @@ PrefabInstance:
       objectReference: {fileID: 1858419814}
     - target: {fileID: 7783867659005207678, guid: ec045597478ace84197d5b3cadef1eb0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.9
+      value: -139
       objectReference: {fileID: 0}
     - target: {fileID: 7783867659005207678, guid: ec045597478ace84197d5b3cadef1eb0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 58.7
+      value: 53.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

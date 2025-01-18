@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackRadius: 5
   attackDamage: 10
-  SFX: 
+  SFX: swinging-staff-whoosh-strong-08-44658
   knockbackStrength: 10
   whatIsPlayer:
     serializedVersion: 2

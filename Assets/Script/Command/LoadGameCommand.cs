@@ -14,6 +14,7 @@ namespace DuyBui
             Debug.Log("Loading saved game...");
 
             string name = GameManager.Instance.LoadGame();
+            Debug.Log(name);
             SceneManager.LoadScene(name);
         }
     }

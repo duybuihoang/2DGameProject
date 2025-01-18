@@ -39,7 +39,7 @@ namespace DuyBui
                         if (!string.IsNullOrEmpty(loadedData.inventory.itemNames[i]))
                         {
                             Debug.Log(loadedData.inventory.itemNames[i]);
-
+                            Debug.Log(Inventory.Instance);
                             ItemSO item = Resources.Load<ItemSO>("Items/" + loadedData.inventory.itemNames[i]);
                             if (item != null)
                             {

@@ -26,6 +26,7 @@ namespace DuyBui.CoreSystem
 
             if (core.transform.parent.tag == "Player" || core.transform.parent.tag == "EvilWizard")
             {
+                GameManager.Instance.Save();
                 SceneManager.LoadScene("Menu");
             }
         }

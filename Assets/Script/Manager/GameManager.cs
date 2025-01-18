@@ -49,7 +49,10 @@ namespace DuyBui
             SceneManager.activeSceneChanged += OnActiveSceneChanged;
 
             if(currentSceneName.Contains("Level"))
+            {
                 MenuManager.Instance.SetMenuState(MenuManager.MenuState.InGame);
+                Debug.Log("INGAME State");
+            }
 
         }
         // Start is called before the first frame update

@@ -54,7 +54,7 @@ namespace DuyBui
 
         public void SetMenuState(MenuState newState)
         {
-            Debug.Log(newState.ToString() + " " + currentState.ToString());
+            Debug.Log("MenuState " + newState.ToString() + " " + currentState.ToString());
             if(currentState == MenuState.Options)
             {
                 Time.timeScale = 1f;
